@@ -1,0 +1,1610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Oporie.ModuloPrincipal.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="OporieModuloPrincipalStoreContainer">
+    <EntitySet Name="ALUMNO" EntityType="Oporie.ModuloPrincipal.Store.ALUMNO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ENTORNO_FAMILIAR" EntityType="Oporie.ModuloPrincipal.Store.ENTORNO_FAMILIAR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PERSONA" EntityType="Oporie.ModuloPrincipal.Store.PERSONA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="REPRESENTANTE" EntityType="Oporie.ModuloPrincipal.Store.REPRESENTANTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="REPRESENTANTE_LEGAL" EntityType="Oporie.ModuloPrincipal.Store.REPRESENTANTE_LEGAL" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AREA_GEOGRAFICA" EntityType="Oporie.ModuloPrincipal.Store.AREA_GEOGRAFICA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CARGO" EntityType="Oporie.ModuloPrincipal.Store.CARGO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CODIGOS" EntityType="Oporie.ModuloPrincipal.Store.CODIGOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HORARIO" EntityType="Oporie.ModuloPrincipal.Store.HORARIO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PARENTESCO" EntityType="Oporie.ModuloPrincipal.Store.PARENTESCO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PERIODO" EntityType="Oporie.ModuloPrincipal.Store.PERIODO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="REFERENCIA" EntityType="Oporie.ModuloPrincipal.Store.REFERENCIA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="REQUISITO" EntityType="Oporie.ModuloPrincipal.Store.REQUISITO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TELEFONO" EntityType="Oporie.ModuloPrincipal.Store.TELEFONO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="COLEGIATURA" EntityType="Oporie.ModuloPrincipal.Store.COLEGIATURA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="INSCRIPCION" EntityType="Oporie.ModuloPrincipal.Store.INSCRIPCION" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MATRICULA" EntityType="Oporie.ModuloPrincipal.Store.MATRICULA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="REQUISITOS_MATRICULA" EntityType="Oporie.ModuloPrincipal.Store.REQUISITOS_MATRICULA" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_ALUMNO_AREA_GEOGRAFICA" Association="Oporie.ModuloPrincipal.Store.FK_ALUMNO_AREA_GEOGRAFICA">
+      <End Role="AREA_GEOGRAFICA" EntitySet="AREA_GEOGRAFICA" />
+      <End Role="ALUMNO" EntitySet="ALUMNO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ALUMNO_TELEFONO" Association="Oporie.ModuloPrincipal.Store.FK_ALUMNO_TELEFONO">
+      <End Role="TELEFONO" EntitySet="TELEFONO" />
+      <End Role="ALUMNO" EntitySet="ALUMNO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INSCRIPCION_ALUMNO" Association="Oporie.ModuloPrincipal.Store.FK_INSCRIPCION_ALUMNO">
+      <End Role="ALUMNO" EntitySet="ALUMNO" />
+      <End Role="INSCRIPCION" EntitySet="INSCRIPCION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REPRESENTANTE_ALUMNO" Association="Oporie.ModuloPrincipal.Store.FK_REPRESENTANTE_ALUMNO">
+      <End Role="ALUMNO" EntitySet="ALUMNO" />
+      <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ENTORNO_FAMILIAR_REPRESENTANTE" Association="Oporie.ModuloPrincipal.Store.FK_ENTORNO_FAMILIAR_REPRESENTANTE">
+      <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+      <End Role="ENTORNO_FAMILIAR" EntitySet="ENTORNO_FAMILIAR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERSONA_CARGO" Association="Oporie.ModuloPrincipal.Store.FK_PERSONA_CARGO">
+      <End Role="CARGO" EntitySet="CARGO" />
+      <End Role="PERSONA" EntitySet="PERSONA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERSONA_TELEFONO" Association="Oporie.ModuloPrincipal.Store.FK_PERSONA_TELEFONO">
+      <End Role="TELEFONO" EntitySet="TELEFONO" />
+      <End Role="PERSONA" EntitySet="PERSONA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REPRESENTANTE_PERSONA" Association="Oporie.ModuloPrincipal.Store.FK_REPRESENTANTE_PERSONA">
+      <End Role="PERSONA" EntitySet="PERSONA" />
+      <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REPRESENTANTE_PARENTESCO" Association="Oporie.ModuloPrincipal.Store.FK_REPRESENTANTE_PARENTESCO">
+      <End Role="PARENTESCO" EntitySet="PARENTESCO" />
+      <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REPRESENTANTE_LEGAL_MATRICULA" Association="Oporie.ModuloPrincipal.Store.FK_REPRESENTANTE_LEGAL_MATRICULA">
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+      <End Role="REPRESENTANTE_LEGAL" EntitySet="REPRESENTANTE_LEGAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REPRESENTANTE_LEGAL_TELEFONO" Association="Oporie.ModuloPrincipal.Store.FK_REPRESENTANTE_LEGAL_TELEFONO">
+      <End Role="TELEFONO" EntitySet="TELEFONO" />
+      <End Role="REPRESENTANTE_LEGAL" EntitySet="REPRESENTANTE_LEGAL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA" Association="Oporie.ModuloPrincipal.Store.FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA">
+      <End Role="AREA_GEOGRAFICA" EntitySet="AREA_GEOGRAFICA" />
+      <End Role="AREA_GEOGRAFICA1" EntitySet="AREA_GEOGRAFICA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AREA_GEOGRAFICA_CODIGOS" Association="Oporie.ModuloPrincipal.Store.FK_AREA_GEOGRAFICA_CODIGOS">
+      <End Role="CODIGOS" EntitySet="CODIGOS" />
+      <End Role="AREA_GEOGRAFICA" EntitySet="AREA_GEOGRAFICA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CARGO_CARGO" Association="Oporie.ModuloPrincipal.Store.FK_CARGO_CARGO">
+      <End Role="CARGO" EntitySet="CARGO" />
+      <End Role="CARGO1" EntitySet="CARGO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COLEGIATURA_HORARIO" Association="Oporie.ModuloPrincipal.Store.FK_COLEGIATURA_HORARIO">
+      <End Role="HORARIO" EntitySet="HORARIO" />
+      <End Role="COLEGIATURA" EntitySet="COLEGIATURA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MATRICULA_HORARIO" Association="Oporie.ModuloPrincipal.Store.FK_MATRICULA_HORARIO">
+      <End Role="HORARIO" EntitySet="HORARIO" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COLEGIATURA_PERIODO" Association="Oporie.ModuloPrincipal.Store.FK_COLEGIATURA_PERIODO">
+      <End Role="PERIODO" EntitySet="PERIODO" />
+      <End Role="COLEGIATURA" EntitySet="COLEGIATURA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MATRICULA_PERIODO" Association="Oporie.ModuloPrincipal.Store.FK_MATRICULA_PERIODO">
+      <End Role="PERIODO" EntitySet="PERIODO" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REFERENCIA_TELEFONO" Association="Oporie.ModuloPrincipal.Store.FK_REFERENCIA_TELEFONO">
+      <End Role="TELEFONO" EntitySet="TELEFONO" />
+      <End Role="REFERENCIA" EntitySet="REFERENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUISITOS_MATRICULA_REQUISITO" Association="Oporie.ModuloPrincipal.Store.FK_REQUISITOS_MATRICULA_REQUISITO">
+      <End Role="REQUISITO" EntitySet="REQUISITO" />
+      <End Role="REQUISITOS_MATRICULA" EntitySet="REQUISITOS_MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MATRICULA_INSCRIPCION" Association="Oporie.ModuloPrincipal.Store.FK_MATRICULA_INSCRIPCION">
+      <End Role="INSCRIPCION" EntitySet="INSCRIPCION" />
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REQUISITOS_MATRICULA_MATRICULA" Association="Oporie.ModuloPrincipal.Store.FK_REQUISITOS_MATRICULA_MATRICULA">
+      <End Role="MATRICULA" EntitySet="MATRICULA" />
+      <End Role="REQUISITOS_MATRICULA" EntitySet="REQUISITOS_MATRICULA" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ALUMNO">
+    <Key>
+      <PropertyRef Name="ID_ALUMNO" />
+    </Key>
+    <Property Name="ID_ALUMNO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_AREAGEOGRAFICA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_TELEFONO" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ALU_ID_INGRESADOPOR" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ALU_CEDULA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="ALU_FIRSTNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ALU_LASTNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ALU_GENERO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="ALU_FECHANAC" Type="datetime" Nullable="true" />
+    <Property Name="ALU_FOTO" Type="varbinary(max)" Nullable="true" />
+    <Property Name="ALU_LUGARNAC" Type="varchar" Nullable="true" MaxLength="120" />
+    <Property Name="ALU_DIRECCION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="ALU_FECHAINGRESO" Type="datetime" Nullable="true" />
+    <Property Name="ALU_ESTADOCIVIL" Type="char" Nullable="true" MaxLength="50" />
+    <Property Name="ALU_EMAIL" Type="varchar" Nullable="true" MaxLength="200" />
+    <Property Name="ALU_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ENTORNO_FAMILIAR">
+    <Key>
+      <PropertyRef Name="ID_ENTORNOFAMILIAR" />
+    </Key>
+    <Property Name="ID_ENTORNOFAMILIAR" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_STATUSVIVIENDA" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ID_TIPOVIVIENDA" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ID_SECTOR" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ID_REPRESENTANTE" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="EFA_DIRECCIONTRABAJO" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EFA_INSTRUCCION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EFA_PROFESION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EFA_OCUPACION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EFA_OTRASACTIVIDADES" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EFA_TIEMPOLIBRE" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EFA_NUMEROEMBARAZOS" Type="smallint" Nullable="true" />
+    <Property Name="EFA_NUMEROPARTOS" Type="smallint" Nullable="true" />
+    <Property Name="EFA_OBSERVACIONES" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EFA_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERSONA">
+    <Key>
+      <PropertyRef Name="ID_PERSONA" />
+    </Key>
+    <Property Name="ID_PERSONA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_AREAGEOGRAFICA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_TELEFONO" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ID_CARGO" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="PER_CEDULA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="PER_FIRSTNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PER_LASTNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PER_GENERO" Type="char" Nullable="true" MaxLength="1" />
+    <Property Name="PER_FECHANAC" Type="datetime" Nullable="true" />
+    <Property Name="PER_FOTO" Type="varbinary(max)" Nullable="true" />
+    <Property Name="PER_LUGARNAC" Type="varchar" Nullable="true" MaxLength="120" />
+    <Property Name="PER_DIRECCION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="PER_ESTADOCIVIL" Type="char" Nullable="true" MaxLength="50" />
+    <Property Name="PER_EMAIL" Type="varchar" Nullable="true" MaxLength="200" />
+    <Property Name="PER_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REPRESENTANTE">
+    <Key>
+      <PropertyRef Name="ID_REPRESENTANTE" />
+    </Key>
+    <Property Name="ID_REPRESENTANTE" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_PARENTESCO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_PERSONA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_ALUMNO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="REP_FECHAINGRESO" Type="datetime" Nullable="true" />
+    <Property Name="REP_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REPRESENTANTE_LEGAL">
+    <Key>
+      <PropertyRef Name="ID_REPRESENTANTELEGAL" />
+    </Key>
+    <Property Name="ID_REPRESENTANTELEGAL" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_MATRICULA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_TELEFONO" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="RLE_CEDULA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="RLE_FIRSTNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RLE_LASTNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RLE_DIRECCION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="RLE_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AREA_GEOGRAFICA">
+    <Key>
+      <PropertyRef Name="ID_AREAGEOGRAFICA" />
+    </Key>
+    <Property Name="ID_AREAGEOGRAFICA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_AREAGEOPADRE" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ID_CODIGO" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="AG_DESCRIPCION" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AG_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CARGO">
+    <Key>
+      <PropertyRef Name="ID_CARGO" />
+    </Key>
+    <Property Name="ID_CARGO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_CARGOPADRE" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CAR_CODIGO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CAR_DESCRIPCION" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="CAR_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CODIGOS">
+    <Key>
+      <PropertyRef Name="ID_CODIGO" />
+    </Key>
+    <Property Name="ID_CODIGO" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="COD_DESCRIPCION" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="COD_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HORARIO">
+    <Key>
+      <PropertyRef Name="ID_HORARIO" />
+    </Key>
+    <Property Name="ID_HORARIO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="HOR_DESCRIPCION" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="HOR_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PARENTESCO">
+    <Key>
+      <PropertyRef Name="ID_PARENTESCO" />
+    </Key>
+    <Property Name="ID_PARENTESCO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PAR_DESCRIPCION" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="PAR_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERIODO">
+    <Key>
+      <PropertyRef Name="ID_PERIODO" />
+    </Key>
+    <Property Name="ID_PERIODO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PER_FECHAINICIO" Type="datetime" Nullable="false" />
+    <Property Name="PER_FECHAFIN" Type="datetime" Nullable="false" />
+    <Property Name="PER_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REFERENCIA">
+    <Key>
+      <PropertyRef Name="ID_REFERENCIA" />
+    </Key>
+    <Property Name="ID_REFERENCIA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_TELEFONO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="REF_CEDULA" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="REF_FIRSTNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="REF_LASTNAME" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="REF_DIRECCION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="REF_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REQUISITO">
+    <Key>
+      <PropertyRef Name="ID_REQUISITO" />
+    </Key>
+    <Property Name="ID_REQUISITO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="REQ_DESCRIPCION" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="REQ_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TELEFONO">
+    <Key>
+      <PropertyRef Name="ID_TELEFONO" />
+    </Key>
+    <Property Name="ID_TELEFONO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TEL_NUMERO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TEL_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="COLEGIATURA">
+    <Key>
+      <PropertyRef Name="ID_COLEGIATURA" />
+    </Key>
+    <Property Name="ID_COLEGIATURA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_PERIODO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_HORARIO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="COL_VALOR" Type="float" Nullable="false" />
+    <Property Name="COL_DESCRIPCION" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="COL_FECHAPAGO" Type="datetime" Nullable="true" />
+    <Property Name="COL_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INSCRIPCION">
+    <Key>
+      <PropertyRef Name="ID_INSCRIPCION" />
+    </Key>
+    <Property Name="ID_INSCRIPCION" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_ALUMNO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="INS_FECHAINGRESO" Type="datetime" Nullable="true" />
+    <Property Name="INS_OBSERVACION" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="INS_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MATRICULA">
+    <Key>
+      <PropertyRef Name="ID_MATRICULA" />
+    </Key>
+    <Property Name="ID_MATRICULA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_INSCRIPCION" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_PERIODO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_HORARIO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MAT_FECHAINGRESO" Type="datetime" Nullable="true" />
+    <Property Name="MAT_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REQUISITOS_MATRICULA">
+    <Key>
+      <PropertyRef Name="ID_REQUISITOMATRICULA" />
+    </Key>
+    <Property Name="ID_REQUISITOMATRICULA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_REQUISITO" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ID_MATRICULA" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RMA_ESTADO" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ALUMNO_AREA_GEOGRAFICA">
+    <End Role="AREA_GEOGRAFICA" Type="Oporie.ModuloPrincipal.Store.AREA_GEOGRAFICA" Multiplicity="1" />
+    <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.Store.ALUMNO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AREA_GEOGRAFICA">
+        <PropertyRef Name="ID_AREAGEOGRAFICA" />
+      </Principal>
+      <Dependent Role="ALUMNO">
+        <PropertyRef Name="ID_AREAGEOGRAFICA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ALUMNO_TELEFONO">
+    <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.Store.TELEFONO" Multiplicity="0..1" />
+    <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.Store.ALUMNO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TELEFONO">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Principal>
+      <Dependent Role="ALUMNO">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INSCRIPCION_ALUMNO">
+    <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.Store.ALUMNO" Multiplicity="1" />
+    <End Role="INSCRIPCION" Type="Oporie.ModuloPrincipal.Store.INSCRIPCION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ALUMNO">
+        <PropertyRef Name="ID_ALUMNO" />
+      </Principal>
+      <Dependent Role="INSCRIPCION">
+        <PropertyRef Name="ID_ALUMNO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REPRESENTANTE_ALUMNO">
+    <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.Store.ALUMNO" Multiplicity="1" />
+    <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.Store.REPRESENTANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ALUMNO">
+        <PropertyRef Name="ID_ALUMNO" />
+      </Principal>
+      <Dependent Role="REPRESENTANTE">
+        <PropertyRef Name="ID_ALUMNO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ENTORNO_FAMILIAR_REPRESENTANTE">
+    <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.Store.REPRESENTANTE" Multiplicity="0..1" />
+    <End Role="ENTORNO_FAMILIAR" Type="Oporie.ModuloPrincipal.Store.ENTORNO_FAMILIAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REPRESENTANTE">
+        <PropertyRef Name="ID_REPRESENTANTE" />
+      </Principal>
+      <Dependent Role="ENTORNO_FAMILIAR">
+        <PropertyRef Name="ID_REPRESENTANTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERSONA_CARGO">
+    <End Role="CARGO" Type="Oporie.ModuloPrincipal.Store.CARGO" Multiplicity="0..1" />
+    <End Role="PERSONA" Type="Oporie.ModuloPrincipal.Store.PERSONA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGO">
+        <PropertyRef Name="ID_CARGO" />
+      </Principal>
+      <Dependent Role="PERSONA">
+        <PropertyRef Name="ID_CARGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERSONA_TELEFONO">
+    <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.Store.TELEFONO" Multiplicity="0..1" />
+    <End Role="PERSONA" Type="Oporie.ModuloPrincipal.Store.PERSONA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TELEFONO">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Principal>
+      <Dependent Role="PERSONA">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REPRESENTANTE_PERSONA">
+    <End Role="PERSONA" Type="Oporie.ModuloPrincipal.Store.PERSONA" Multiplicity="1" />
+    <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.Store.REPRESENTANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERSONA">
+        <PropertyRef Name="ID_PERSONA" />
+      </Principal>
+      <Dependent Role="REPRESENTANTE">
+        <PropertyRef Name="ID_PERSONA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REPRESENTANTE_PARENTESCO">
+    <End Role="PARENTESCO" Type="Oporie.ModuloPrincipal.Store.PARENTESCO" Multiplicity="1" />
+    <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.Store.REPRESENTANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PARENTESCO">
+        <PropertyRef Name="ID_PARENTESCO" />
+      </Principal>
+      <Dependent Role="REPRESENTANTE">
+        <PropertyRef Name="ID_PARENTESCO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REPRESENTANTE_LEGAL_MATRICULA">
+    <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.Store.MATRICULA" Multiplicity="1" />
+    <End Role="REPRESENTANTE_LEGAL" Type="Oporie.ModuloPrincipal.Store.REPRESENTANTE_LEGAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MATRICULA">
+        <PropertyRef Name="ID_MATRICULA" />
+      </Principal>
+      <Dependent Role="REPRESENTANTE_LEGAL">
+        <PropertyRef Name="ID_MATRICULA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REPRESENTANTE_LEGAL_TELEFONO">
+    <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.Store.TELEFONO" Multiplicity="0..1" />
+    <End Role="REPRESENTANTE_LEGAL" Type="Oporie.ModuloPrincipal.Store.REPRESENTANTE_LEGAL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TELEFONO">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Principal>
+      <Dependent Role="REPRESENTANTE_LEGAL">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA">
+    <End Role="AREA_GEOGRAFICA" Type="Oporie.ModuloPrincipal.Store.AREA_GEOGRAFICA" Multiplicity="0..1" />
+    <End Role="AREA_GEOGRAFICA1" Type="Oporie.ModuloPrincipal.Store.AREA_GEOGRAFICA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AREA_GEOGRAFICA">
+        <PropertyRef Name="ID_AREAGEOGRAFICA" />
+      </Principal>
+      <Dependent Role="AREA_GEOGRAFICA1">
+        <PropertyRef Name="ID_AREAGEOPADRE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AREA_GEOGRAFICA_CODIGOS">
+    <End Role="CODIGOS" Type="Oporie.ModuloPrincipal.Store.CODIGOS" Multiplicity="0..1" />
+    <End Role="AREA_GEOGRAFICA" Type="Oporie.ModuloPrincipal.Store.AREA_GEOGRAFICA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CODIGOS">
+        <PropertyRef Name="ID_CODIGO" />
+      </Principal>
+      <Dependent Role="AREA_GEOGRAFICA">
+        <PropertyRef Name="ID_CODIGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CARGO_CARGO">
+    <End Role="CARGO" Type="Oporie.ModuloPrincipal.Store.CARGO" Multiplicity="0..1" />
+    <End Role="CARGO1" Type="Oporie.ModuloPrincipal.Store.CARGO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGO">
+        <PropertyRef Name="ID_CARGO" />
+      </Principal>
+      <Dependent Role="CARGO1">
+        <PropertyRef Name="ID_CARGOPADRE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COLEGIATURA_HORARIO">
+    <End Role="HORARIO" Type="Oporie.ModuloPrincipal.Store.HORARIO" Multiplicity="1" />
+    <End Role="COLEGIATURA" Type="Oporie.ModuloPrincipal.Store.COLEGIATURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HORARIO">
+        <PropertyRef Name="ID_HORARIO" />
+      </Principal>
+      <Dependent Role="COLEGIATURA">
+        <PropertyRef Name="ID_HORARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MATRICULA_HORARIO">
+    <End Role="HORARIO" Type="Oporie.ModuloPrincipal.Store.HORARIO" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.Store.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HORARIO">
+        <PropertyRef Name="ID_HORARIO" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="ID_HORARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COLEGIATURA_PERIODO">
+    <End Role="PERIODO" Type="Oporie.ModuloPrincipal.Store.PERIODO" Multiplicity="1" />
+    <End Role="COLEGIATURA" Type="Oporie.ModuloPrincipal.Store.COLEGIATURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERIODO">
+        <PropertyRef Name="ID_PERIODO" />
+      </Principal>
+      <Dependent Role="COLEGIATURA">
+        <PropertyRef Name="ID_PERIODO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MATRICULA_PERIODO">
+    <End Role="PERIODO" Type="Oporie.ModuloPrincipal.Store.PERIODO" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.Store.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PERIODO">
+        <PropertyRef Name="ID_PERIODO" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="ID_PERIODO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REFERENCIA_TELEFONO">
+    <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.Store.TELEFONO" Multiplicity="1" />
+    <End Role="REFERENCIA" Type="Oporie.ModuloPrincipal.Store.REFERENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TELEFONO">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Principal>
+      <Dependent Role="REFERENCIA">
+        <PropertyRef Name="ID_TELEFONO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUISITOS_MATRICULA_REQUISITO">
+    <End Role="REQUISITO" Type="Oporie.ModuloPrincipal.Store.REQUISITO" Multiplicity="1" />
+    <End Role="REQUISITOS_MATRICULA" Type="Oporie.ModuloPrincipal.Store.REQUISITOS_MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REQUISITO">
+        <PropertyRef Name="ID_REQUISITO" />
+      </Principal>
+      <Dependent Role="REQUISITOS_MATRICULA">
+        <PropertyRef Name="ID_REQUISITO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MATRICULA_INSCRIPCION">
+    <End Role="INSCRIPCION" Type="Oporie.ModuloPrincipal.Store.INSCRIPCION" Multiplicity="1" />
+    <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.Store.MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INSCRIPCION">
+        <PropertyRef Name="ID_INSCRIPCION" />
+      </Principal>
+      <Dependent Role="MATRICULA">
+        <PropertyRef Name="ID_INSCRIPCION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REQUISITOS_MATRICULA_MATRICULA">
+    <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.Store.MATRICULA" Multiplicity="1" />
+    <End Role="REQUISITOS_MATRICULA" Type="Oporie.ModuloPrincipal.Store.REQUISITOS_MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MATRICULA">
+        <PropertyRef Name="ID_MATRICULA" />
+      </Principal>
+      <Dependent Role="REQUISITOS_MATRICULA">
+        <PropertyRef Name="ID_MATRICULA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Oporie.ModuloPrincipal" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ModuloPrincipalContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ALUMNO" EntityType="Oporie.ModuloPrincipal.ALUMNO" />
+          <EntitySet Name="ENTORNO_FAMILIAR" EntityType="Oporie.ModuloPrincipal.ENTORNO_FAMILIAR" />
+          <EntitySet Name="PERSONA" EntityType="Oporie.ModuloPrincipal.PERSONA" />
+          <EntitySet Name="REPRESENTANTE" EntityType="Oporie.ModuloPrincipal.REPRESENTANTE" />
+          <EntitySet Name="REPRESENTANTE_LEGAL" EntityType="Oporie.ModuloPrincipal.REPRESENTANTE_LEGAL" />
+          <EntitySet Name="AREA_GEOGRAFICA" EntityType="Oporie.ModuloPrincipal.AREA_GEOGRAFICA" />
+          <EntitySet Name="CARGO" EntityType="Oporie.ModuloPrincipal.CARGO" />
+          <EntitySet Name="CODIGOS" EntityType="Oporie.ModuloPrincipal.CODIGOS" />
+          <EntitySet Name="HORARIO" EntityType="Oporie.ModuloPrincipal.HORARIO" />
+          <EntitySet Name="PARENTESCO" EntityType="Oporie.ModuloPrincipal.PARENTESCO" />
+          <EntitySet Name="PERIODO" EntityType="Oporie.ModuloPrincipal.PERIODO" />
+          <EntitySet Name="REFERENCIA" EntityType="Oporie.ModuloPrincipal.REFERENCIA" />
+          <EntitySet Name="REQUISITO" EntityType="Oporie.ModuloPrincipal.REQUISITO" />
+          <EntitySet Name="TELEFONO" EntityType="Oporie.ModuloPrincipal.TELEFONO" />
+          <EntitySet Name="COLEGIATURA" EntityType="Oporie.ModuloPrincipal.COLEGIATURA" />
+          <EntitySet Name="INSCRIPCION" EntityType="Oporie.ModuloPrincipal.INSCRIPCION" />
+          <EntitySet Name="MATRICULA" EntityType="Oporie.ModuloPrincipal.MATRICULA" />
+          <EntitySet Name="REQUISITOS_MATRICULA" EntityType="Oporie.ModuloPrincipal.REQUISITOS_MATRICULA" />
+          <AssociationSet Name="FK_ALUMNO_AREA_GEOGRAFICA" Association="Oporie.ModuloPrincipal.FK_ALUMNO_AREA_GEOGRAFICA">
+            <End Role="AREA_GEOGRAFICA" EntitySet="AREA_GEOGRAFICA" />
+            <End Role="ALUMNO" EntitySet="ALUMNO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ALUMNO_TELEFONO" Association="Oporie.ModuloPrincipal.FK_ALUMNO_TELEFONO">
+            <End Role="TELEFONO" EntitySet="TELEFONO" />
+            <End Role="ALUMNO" EntitySet="ALUMNO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INSCRIPCION_ALUMNO" Association="Oporie.ModuloPrincipal.FK_INSCRIPCION_ALUMNO">
+            <End Role="ALUMNO" EntitySet="ALUMNO" />
+            <End Role="INSCRIPCION" EntitySet="INSCRIPCION" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPRESENTANTE_ALUMNO" Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_ALUMNO">
+            <End Role="ALUMNO" EntitySet="ALUMNO" />
+            <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ENTORNO_FAMILIAR_REPRESENTANTE" Association="Oporie.ModuloPrincipal.FK_ENTORNO_FAMILIAR_REPRESENTANTE">
+            <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+            <End Role="ENTORNO_FAMILIAR" EntitySet="ENTORNO_FAMILIAR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONA_CARGO" Association="Oporie.ModuloPrincipal.FK_PERSONA_CARGO">
+            <End Role="CARGO" EntitySet="CARGO" />
+            <End Role="PERSONA" EntitySet="PERSONA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSONA_TELEFONO" Association="Oporie.ModuloPrincipal.FK_PERSONA_TELEFONO">
+            <End Role="TELEFONO" EntitySet="TELEFONO" />
+            <End Role="PERSONA" EntitySet="PERSONA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPRESENTANTE_PERSONA" Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PERSONA">
+            <End Role="PERSONA" EntitySet="PERSONA" />
+            <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPRESENTANTE_PARENTESCO" Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PARENTESCO">
+            <End Role="PARENTESCO" EntitySet="PARENTESCO" />
+            <End Role="REPRESENTANTE" EntitySet="REPRESENTANTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPRESENTANTE_LEGAL_MATRICULA" Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_MATRICULA">
+            <End Role="MATRICULA" EntitySet="MATRICULA" />
+            <End Role="REPRESENTANTE_LEGAL" EntitySet="REPRESENTANTE_LEGAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPRESENTANTE_LEGAL_TELEFONO" Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_TELEFONO">
+            <End Role="TELEFONO" EntitySet="TELEFONO" />
+            <End Role="REPRESENTANTE_LEGAL" EntitySet="REPRESENTANTE_LEGAL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA" Association="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA">
+            <End Role="AREA_GEOGRAFICA" EntitySet="AREA_GEOGRAFICA" />
+            <End Role="AREA_GEOGRAFICA1" EntitySet="AREA_GEOGRAFICA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AREA_GEOGRAFICA_CODIGOS" Association="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_CODIGOS">
+            <End Role="CODIGOS" EntitySet="CODIGOS" />
+            <End Role="AREA_GEOGRAFICA" EntitySet="AREA_GEOGRAFICA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CARGO_CARGO" Association="Oporie.ModuloPrincipal.FK_CARGO_CARGO">
+            <End Role="CARGO" EntitySet="CARGO" />
+            <End Role="CARGO1" EntitySet="CARGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_COLEGIATURA_HORARIO" Association="Oporie.ModuloPrincipal.FK_COLEGIATURA_HORARIO">
+            <End Role="HORARIO" EntitySet="HORARIO" />
+            <End Role="COLEGIATURA" EntitySet="COLEGIATURA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MATRICULA_HORARIO" Association="Oporie.ModuloPrincipal.FK_MATRICULA_HORARIO">
+            <End Role="HORARIO" EntitySet="HORARIO" />
+            <End Role="MATRICULA" EntitySet="MATRICULA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_COLEGIATURA_PERIODO" Association="Oporie.ModuloPrincipal.FK_COLEGIATURA_PERIODO">
+            <End Role="PERIODO" EntitySet="PERIODO" />
+            <End Role="COLEGIATURA" EntitySet="COLEGIATURA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MATRICULA_PERIODO" Association="Oporie.ModuloPrincipal.FK_MATRICULA_PERIODO">
+            <End Role="PERIODO" EntitySet="PERIODO" />
+            <End Role="MATRICULA" EntitySet="MATRICULA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REFERENCIA_TELEFONO" Association="Oporie.ModuloPrincipal.FK_REFERENCIA_TELEFONO">
+            <End Role="TELEFONO" EntitySet="TELEFONO" />
+            <End Role="REFERENCIA" EntitySet="REFERENCIA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REQUISITOS_MATRICULA_REQUISITO" Association="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_REQUISITO">
+            <End Role="REQUISITO" EntitySet="REQUISITO" />
+            <End Role="REQUISITOS_MATRICULA" EntitySet="REQUISITOS_MATRICULA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MATRICULA_INSCRIPCION" Association="Oporie.ModuloPrincipal.FK_MATRICULA_INSCRIPCION">
+            <End Role="INSCRIPCION" EntitySet="INSCRIPCION" />
+            <End Role="MATRICULA" EntitySet="MATRICULA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REQUISITOS_MATRICULA_MATRICULA" Association="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_MATRICULA">
+            <End Role="MATRICULA" EntitySet="MATRICULA" />
+            <End Role="REQUISITOS_MATRICULA" EntitySet="REQUISITOS_MATRICULA" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ALUMNO">
+          <Key>
+            <PropertyRef Name="ID_ALUMNO" />
+          </Key>
+          <Property Name="ID_ALUMNO" Type="Guid" Nullable="false" />
+          <Property Name="ID_AREAGEOGRAFICA" Type="Guid" Nullable="false" />
+          <Property Name="ID_TELEFONO" Type="Guid" />
+          <Property Name="ALU_ID_INGRESADOPOR" Type="Guid" />
+          <Property Name="ALU_CEDULA" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ALU_FIRSTNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ALU_LASTNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ALU_GENERO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ALU_FECHANAC" Type="DateTime" />
+          <Property Name="ALU_FOTO" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ALU_LUGARNAC" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="ALU_DIRECCION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ALU_FECHAINGRESO" Type="DateTime" />
+          <Property Name="ALU_ESTADOCIVIL" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="ALU_EMAIL" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="ALU_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="AREA_GEOGRAFICA" Relationship="Oporie.ModuloPrincipal.FK_ALUMNO_AREA_GEOGRAFICA" FromRole="ALUMNO" ToRole="AREA_GEOGRAFICA" />
+          <NavigationProperty Name="TELEFONO" Relationship="Oporie.ModuloPrincipal.FK_ALUMNO_TELEFONO" FromRole="ALUMNO" ToRole="TELEFONO" />
+          <NavigationProperty Name="INSCRIPCION" Relationship="Oporie.ModuloPrincipal.FK_INSCRIPCION_ALUMNO" FromRole="ALUMNO" ToRole="INSCRIPCION" />
+          <NavigationProperty Name="REPRESENTANTE" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_ALUMNO" FromRole="ALUMNO" ToRole="REPRESENTANTE" />
+        </EntityType>
+        <EntityType Name="ENTORNO_FAMILIAR">
+          <Key>
+            <PropertyRef Name="ID_ENTORNOFAMILIAR" />
+          </Key>
+          <Property Name="ID_ENTORNOFAMILIAR" Type="Guid" Nullable="false" />
+          <Property Name="ID_STATUSVIVIENDA" Type="Guid" />
+          <Property Name="ID_TIPOVIVIENDA" Type="Guid" />
+          <Property Name="ID_SECTOR" Type="Guid" />
+          <Property Name="ID_REPRESENTANTE" Type="Guid" />
+          <Property Name="EFA_DIRECCIONTRABAJO" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EFA_INSTRUCCION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EFA_PROFESION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EFA_OCUPACION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EFA_OTRASACTIVIDADES" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EFA_TIEMPOLIBRE" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EFA_NUMEROEMBARAZOS" Type="Int16" />
+          <Property Name="EFA_NUMEROPARTOS" Type="Int16" />
+          <Property Name="EFA_OBSERVACIONES" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EFA_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="REPRESENTANTE" Relationship="Oporie.ModuloPrincipal.FK_ENTORNO_FAMILIAR_REPRESENTANTE" FromRole="ENTORNO_FAMILIAR" ToRole="REPRESENTANTE" />
+        </EntityType>
+        <EntityType Name="PERSONA">
+          <Key>
+            <PropertyRef Name="ID_PERSONA" />
+          </Key>
+          <Property Name="ID_PERSONA" Type="Guid" Nullable="false" />
+          <Property Name="ID_AREAGEOGRAFICA" Type="Guid" Nullable="false" />
+          <Property Name="ID_TELEFONO" Type="Guid" />
+          <Property Name="ID_CARGO" Type="Guid" />
+          <Property Name="PER_CEDULA" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PER_FIRSTNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PER_LASTNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PER_GENERO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="PER_FECHANAC" Type="DateTime" />
+          <Property Name="PER_FOTO" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="PER_LUGARNAC" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="PER_DIRECCION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="PER_ESTADOCIVIL" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="PER_EMAIL" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="PER_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="CARGO" Relationship="Oporie.ModuloPrincipal.FK_PERSONA_CARGO" FromRole="PERSONA" ToRole="CARGO" />
+          <NavigationProperty Name="TELEFONO" Relationship="Oporie.ModuloPrincipal.FK_PERSONA_TELEFONO" FromRole="PERSONA" ToRole="TELEFONO" />
+          <NavigationProperty Name="REPRESENTANTE" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PERSONA" FromRole="PERSONA" ToRole="REPRESENTANTE" />
+        </EntityType>
+        <EntityType Name="REPRESENTANTE">
+          <Key>
+            <PropertyRef Name="ID_REPRESENTANTE" />
+          </Key>
+          <Property Name="ID_REPRESENTANTE" Type="Guid" Nullable="false" />
+          <Property Name="ID_PARENTESCO" Type="Guid" Nullable="false" />
+          <Property Name="ID_PERSONA" Type="Guid" Nullable="false" />
+          <Property Name="ID_ALUMNO" Type="Guid" Nullable="false" />
+          <Property Name="REP_FECHAINGRESO" Type="DateTime" />
+          <Property Name="REP_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ALUMNO" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_ALUMNO" FromRole="REPRESENTANTE" ToRole="ALUMNO" />
+          <NavigationProperty Name="ENTORNO_FAMILIAR" Relationship="Oporie.ModuloPrincipal.FK_ENTORNO_FAMILIAR_REPRESENTANTE" FromRole="REPRESENTANTE" ToRole="ENTORNO_FAMILIAR" />
+          <NavigationProperty Name="PERSONA" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PERSONA" FromRole="REPRESENTANTE" ToRole="PERSONA" />
+          <NavigationProperty Name="PARENTESCO" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PARENTESCO" FromRole="REPRESENTANTE" ToRole="PARENTESCO" />
+        </EntityType>
+        <EntityType Name="REPRESENTANTE_LEGAL">
+          <Key>
+            <PropertyRef Name="ID_REPRESENTANTELEGAL" />
+          </Key>
+          <Property Name="ID_REPRESENTANTELEGAL" Type="Guid" Nullable="false" />
+          <Property Name="ID_MATRICULA" Type="Guid" Nullable="false" />
+          <Property Name="ID_TELEFONO" Type="Guid" />
+          <Property Name="RLE_CEDULA" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RLE_FIRSTNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RLE_LASTNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RLE_DIRECCION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="RLE_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="MATRICULA" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_MATRICULA" FromRole="REPRESENTANTE_LEGAL" ToRole="MATRICULA" />
+          <NavigationProperty Name="TELEFONO" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_TELEFONO" FromRole="REPRESENTANTE_LEGAL" ToRole="TELEFONO" />
+        </EntityType>
+        <EntityType Name="AREA_GEOGRAFICA">
+          <Key>
+            <PropertyRef Name="ID_AREAGEOGRAFICA" />
+          </Key>
+          <Property Name="ID_AREAGEOGRAFICA" Type="Guid" Nullable="false" />
+          <Property Name="ID_AREAGEOPADRE" Type="Guid" />
+          <Property Name="ID_CODIGO" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="AG_DESCRIPCION" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="AG_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ALUMNO" Relationship="Oporie.ModuloPrincipal.FK_ALUMNO_AREA_GEOGRAFICA" FromRole="AREA_GEOGRAFICA" ToRole="ALUMNO" />
+          <NavigationProperty Name="AREA_GEOGRAFICA1" Relationship="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA" FromRole="AREA_GEOGRAFICA" ToRole="AREA_GEOGRAFICA1" />
+          <NavigationProperty Name="AREA_GEOGRAFICA2" Relationship="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA" FromRole="AREA_GEOGRAFICA1" ToRole="AREA_GEOGRAFICA" />
+          <NavigationProperty Name="CODIGOS" Relationship="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_CODIGOS" FromRole="AREA_GEOGRAFICA" ToRole="CODIGOS" />
+        </EntityType>
+        <EntityType Name="CARGO">
+          <Key>
+            <PropertyRef Name="ID_CARGO" />
+          </Key>
+          <Property Name="ID_CARGO" Type="Guid" Nullable="false" />
+          <Property Name="ID_CARGOPADRE" Type="Guid" />
+          <Property Name="CAR_CODIGO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CAR_DESCRIPCION" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CAR_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="PERSONA" Relationship="Oporie.ModuloPrincipal.FK_PERSONA_CARGO" FromRole="CARGO" ToRole="PERSONA" />
+          <NavigationProperty Name="CARGO1" Relationship="Oporie.ModuloPrincipal.FK_CARGO_CARGO" FromRole="CARGO" ToRole="CARGO1" />
+          <NavigationProperty Name="CARGO2" Relationship="Oporie.ModuloPrincipal.FK_CARGO_CARGO" FromRole="CARGO1" ToRole="CARGO" />
+        </EntityType>
+        <EntityType Name="CODIGOS">
+          <Key>
+            <PropertyRef Name="ID_CODIGO" />
+          </Key>
+          <Property Name="ID_CODIGO" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="COD_DESCRIPCION" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="COD_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="AREA_GEOGRAFICA" Relationship="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_CODIGOS" FromRole="CODIGOS" ToRole="AREA_GEOGRAFICA" />
+        </EntityType>
+        <EntityType Name="HORARIO">
+          <Key>
+            <PropertyRef Name="ID_HORARIO" />
+          </Key>
+          <Property Name="ID_HORARIO" Type="Guid" Nullable="false" />
+          <Property Name="HOR_DESCRIPCION" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="HOR_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="COLEGIATURA" Relationship="Oporie.ModuloPrincipal.FK_COLEGIATURA_HORARIO" FromRole="HORARIO" ToRole="COLEGIATURA" />
+          <NavigationProperty Name="MATRICULA" Relationship="Oporie.ModuloPrincipal.FK_MATRICULA_HORARIO" FromRole="HORARIO" ToRole="MATRICULA" />
+        </EntityType>
+        <EntityType Name="PARENTESCO">
+          <Key>
+            <PropertyRef Name="ID_PARENTESCO" />
+          </Key>
+          <Property Name="ID_PARENTESCO" Type="Guid" Nullable="false" />
+          <Property Name="PAR_DESCRIPCION" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="PAR_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="REPRESENTANTE" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PARENTESCO" FromRole="PARENTESCO" ToRole="REPRESENTANTE" />
+        </EntityType>
+        <EntityType Name="PERIODO">
+          <Key>
+            <PropertyRef Name="ID_PERIODO" />
+          </Key>
+          <Property Name="ID_PERIODO" Type="Guid" Nullable="false" />
+          <Property Name="PER_FECHAINICIO" Type="DateTime" Nullable="false" />
+          <Property Name="PER_FECHAFIN" Type="DateTime" Nullable="false" />
+          <Property Name="PER_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="COLEGIATURA" Relationship="Oporie.ModuloPrincipal.FK_COLEGIATURA_PERIODO" FromRole="PERIODO" ToRole="COLEGIATURA" />
+          <NavigationProperty Name="MATRICULA" Relationship="Oporie.ModuloPrincipal.FK_MATRICULA_PERIODO" FromRole="PERIODO" ToRole="MATRICULA" />
+        </EntityType>
+        <EntityType Name="REFERENCIA">
+          <Key>
+            <PropertyRef Name="ID_REFERENCIA" />
+          </Key>
+          <Property Name="ID_REFERENCIA" Type="Guid" Nullable="false" />
+          <Property Name="ID_TELEFONO" Type="Guid" Nullable="false" />
+          <Property Name="REF_CEDULA" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="REF_FIRSTNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="REF_LASTNAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="REF_DIRECCION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="REF_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TELEFONO" Relationship="Oporie.ModuloPrincipal.FK_REFERENCIA_TELEFONO" FromRole="REFERENCIA" ToRole="TELEFONO" />
+        </EntityType>
+        <EntityType Name="REQUISITO">
+          <Key>
+            <PropertyRef Name="ID_REQUISITO" />
+          </Key>
+          <Property Name="ID_REQUISITO" Type="Guid" Nullable="false" />
+          <Property Name="REQ_DESCRIPCION" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="REQ_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="REQUISITOS_MATRICULA" Relationship="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_REQUISITO" FromRole="REQUISITO" ToRole="REQUISITOS_MATRICULA" />
+        </EntityType>
+        <EntityType Name="TELEFONO">
+          <Key>
+            <PropertyRef Name="ID_TELEFONO" />
+          </Key>
+          <Property Name="ID_TELEFONO" Type="Guid" Nullable="false" />
+          <Property Name="TEL_NUMERO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TEL_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ALUMNO" Relationship="Oporie.ModuloPrincipal.FK_ALUMNO_TELEFONO" FromRole="TELEFONO" ToRole="ALUMNO" />
+          <NavigationProperty Name="PERSONA" Relationship="Oporie.ModuloPrincipal.FK_PERSONA_TELEFONO" FromRole="TELEFONO" ToRole="PERSONA" />
+          <NavigationProperty Name="REPRESENTANTE_LEGAL" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_TELEFONO" FromRole="TELEFONO" ToRole="REPRESENTANTE_LEGAL" />
+          <NavigationProperty Name="REFERENCIA" Relationship="Oporie.ModuloPrincipal.FK_REFERENCIA_TELEFONO" FromRole="TELEFONO" ToRole="REFERENCIA" />
+        </EntityType>
+        <EntityType Name="COLEGIATURA">
+          <Key>
+            <PropertyRef Name="ID_COLEGIATURA" />
+          </Key>
+          <Property Name="ID_COLEGIATURA" Type="Guid" Nullable="false" />
+          <Property Name="ID_PERIODO" Type="Guid" Nullable="false" />
+          <Property Name="ID_HORARIO" Type="Guid" Nullable="false" />
+          <Property Name="COL_VALOR" Type="Double" Nullable="false" />
+          <Property Name="COL_DESCRIPCION" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="COL_FECHAPAGO" Type="DateTime" />
+          <Property Name="COL_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="HORARIO" Relationship="Oporie.ModuloPrincipal.FK_COLEGIATURA_HORARIO" FromRole="COLEGIATURA" ToRole="HORARIO" />
+          <NavigationProperty Name="PERIODO" Relationship="Oporie.ModuloPrincipal.FK_COLEGIATURA_PERIODO" FromRole="COLEGIATURA" ToRole="PERIODO" />
+        </EntityType>
+        <EntityType Name="INSCRIPCION">
+          <Key>
+            <PropertyRef Name="ID_INSCRIPCION" />
+          </Key>
+          <Property Name="ID_INSCRIPCION" Type="Guid" Nullable="false" />
+          <Property Name="ID_ALUMNO" Type="Guid" Nullable="false" />
+          <Property Name="INS_FECHAINGRESO" Type="DateTime" />
+          <Property Name="INS_OBSERVACION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="INS_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ALUMNO" Relationship="Oporie.ModuloPrincipal.FK_INSCRIPCION_ALUMNO" FromRole="INSCRIPCION" ToRole="ALUMNO" />
+          <NavigationProperty Name="MATRICULA" Relationship="Oporie.ModuloPrincipal.FK_MATRICULA_INSCRIPCION" FromRole="INSCRIPCION" ToRole="MATRICULA" />
+        </EntityType>
+        <EntityType Name="MATRICULA">
+          <Key>
+            <PropertyRef Name="ID_MATRICULA" />
+          </Key>
+          <Property Name="ID_MATRICULA" Type="Guid" Nullable="false" />
+          <Property Name="ID_INSCRIPCION" Type="Guid" Nullable="false" />
+          <Property Name="ID_PERIODO" Type="Guid" Nullable="false" />
+          <Property Name="ID_HORARIO" Type="Guid" Nullable="false" />
+          <Property Name="MAT_FECHAINGRESO" Type="DateTime" />
+          <Property Name="MAT_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="REPRESENTANTE_LEGAL" Relationship="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_MATRICULA" FromRole="MATRICULA" ToRole="REPRESENTANTE_LEGAL" />
+          <NavigationProperty Name="HORARIO" Relationship="Oporie.ModuloPrincipal.FK_MATRICULA_HORARIO" FromRole="MATRICULA" ToRole="HORARIO" />
+          <NavigationProperty Name="PERIODO" Relationship="Oporie.ModuloPrincipal.FK_MATRICULA_PERIODO" FromRole="MATRICULA" ToRole="PERIODO" />
+          <NavigationProperty Name="INSCRIPCION" Relationship="Oporie.ModuloPrincipal.FK_MATRICULA_INSCRIPCION" FromRole="MATRICULA" ToRole="INSCRIPCION" />
+          <NavigationProperty Name="REQUISITOS_MATRICULA" Relationship="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_MATRICULA" FromRole="MATRICULA" ToRole="REQUISITOS_MATRICULA" />
+        </EntityType>
+        <EntityType Name="REQUISITOS_MATRICULA">
+          <Key>
+            <PropertyRef Name="ID_REQUISITOMATRICULA" />
+          </Key>
+          <Property Name="ID_REQUISITOMATRICULA" Type="Guid" Nullable="false" />
+          <Property Name="ID_REQUISITO" Type="Guid" Nullable="false" />
+          <Property Name="ID_MATRICULA" Type="Guid" Nullable="false" />
+          <Property Name="RMA_ESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="REQUISITO" Relationship="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_REQUISITO" FromRole="REQUISITOS_MATRICULA" ToRole="REQUISITO" />
+          <NavigationProperty Name="MATRICULA" Relationship="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_MATRICULA" FromRole="REQUISITOS_MATRICULA" ToRole="MATRICULA" />
+        </EntityType>
+        <Association Name="FK_ALUMNO_AREA_GEOGRAFICA">
+          <End Role="AREA_GEOGRAFICA" Type="Oporie.ModuloPrincipal.AREA_GEOGRAFICA" Multiplicity="1" />
+          <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.ALUMNO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AREA_GEOGRAFICA">
+              <PropertyRef Name="ID_AREAGEOGRAFICA" />
+            </Principal>
+            <Dependent Role="ALUMNO">
+              <PropertyRef Name="ID_AREAGEOGRAFICA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ALUMNO_TELEFONO">
+          <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.TELEFONO" Multiplicity="0..1" />
+          <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.ALUMNO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TELEFONO">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Principal>
+            <Dependent Role="ALUMNO">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INSCRIPCION_ALUMNO">
+          <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.ALUMNO" Multiplicity="1" />
+          <End Role="INSCRIPCION" Type="Oporie.ModuloPrincipal.INSCRIPCION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALUMNO">
+              <PropertyRef Name="ID_ALUMNO" />
+            </Principal>
+            <Dependent Role="INSCRIPCION">
+              <PropertyRef Name="ID_ALUMNO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPRESENTANTE_ALUMNO">
+          <End Role="ALUMNO" Type="Oporie.ModuloPrincipal.ALUMNO" Multiplicity="1" />
+          <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.REPRESENTANTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ALUMNO">
+              <PropertyRef Name="ID_ALUMNO" />
+            </Principal>
+            <Dependent Role="REPRESENTANTE">
+              <PropertyRef Name="ID_ALUMNO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ENTORNO_FAMILIAR_REPRESENTANTE">
+          <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.REPRESENTANTE" Multiplicity="0..1" />
+          <End Role="ENTORNO_FAMILIAR" Type="Oporie.ModuloPrincipal.ENTORNO_FAMILIAR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="REPRESENTANTE">
+              <PropertyRef Name="ID_REPRESENTANTE" />
+            </Principal>
+            <Dependent Role="ENTORNO_FAMILIAR">
+              <PropertyRef Name="ID_REPRESENTANTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONA_CARGO">
+          <End Role="CARGO" Type="Oporie.ModuloPrincipal.CARGO" Multiplicity="0..1" />
+          <End Role="PERSONA" Type="Oporie.ModuloPrincipal.PERSONA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CARGO">
+              <PropertyRef Name="ID_CARGO" />
+            </Principal>
+            <Dependent Role="PERSONA">
+              <PropertyRef Name="ID_CARGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSONA_TELEFONO">
+          <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.TELEFONO" Multiplicity="0..1" />
+          <End Role="PERSONA" Type="Oporie.ModuloPrincipal.PERSONA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TELEFONO">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Principal>
+            <Dependent Role="PERSONA">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPRESENTANTE_PERSONA">
+          <End Role="PERSONA" Type="Oporie.ModuloPrincipal.PERSONA" Multiplicity="1" />
+          <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.REPRESENTANTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERSONA">
+              <PropertyRef Name="ID_PERSONA" />
+            </Principal>
+            <Dependent Role="REPRESENTANTE">
+              <PropertyRef Name="ID_PERSONA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPRESENTANTE_PARENTESCO">
+          <End Role="PARENTESCO" Type="Oporie.ModuloPrincipal.PARENTESCO" Multiplicity="1" />
+          <End Role="REPRESENTANTE" Type="Oporie.ModuloPrincipal.REPRESENTANTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PARENTESCO">
+              <PropertyRef Name="ID_PARENTESCO" />
+            </Principal>
+            <Dependent Role="REPRESENTANTE">
+              <PropertyRef Name="ID_PARENTESCO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPRESENTANTE_LEGAL_MATRICULA">
+          <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.MATRICULA" Multiplicity="1" />
+          <End Role="REPRESENTANTE_LEGAL" Type="Oporie.ModuloPrincipal.REPRESENTANTE_LEGAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MATRICULA">
+              <PropertyRef Name="ID_MATRICULA" />
+            </Principal>
+            <Dependent Role="REPRESENTANTE_LEGAL">
+              <PropertyRef Name="ID_MATRICULA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPRESENTANTE_LEGAL_TELEFONO">
+          <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.TELEFONO" Multiplicity="0..1" />
+          <End Role="REPRESENTANTE_LEGAL" Type="Oporie.ModuloPrincipal.REPRESENTANTE_LEGAL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TELEFONO">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Principal>
+            <Dependent Role="REPRESENTANTE_LEGAL">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA">
+          <End Role="AREA_GEOGRAFICA" Type="Oporie.ModuloPrincipal.AREA_GEOGRAFICA" Multiplicity="0..1" />
+          <End Role="AREA_GEOGRAFICA1" Type="Oporie.ModuloPrincipal.AREA_GEOGRAFICA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AREA_GEOGRAFICA">
+              <PropertyRef Name="ID_AREAGEOGRAFICA" />
+            </Principal>
+            <Dependent Role="AREA_GEOGRAFICA1">
+              <PropertyRef Name="ID_AREAGEOPADRE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AREA_GEOGRAFICA_CODIGOS">
+          <End Role="CODIGOS" Type="Oporie.ModuloPrincipal.CODIGOS" Multiplicity="0..1" />
+          <End Role="AREA_GEOGRAFICA" Type="Oporie.ModuloPrincipal.AREA_GEOGRAFICA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CODIGOS">
+              <PropertyRef Name="ID_CODIGO" />
+            </Principal>
+            <Dependent Role="AREA_GEOGRAFICA">
+              <PropertyRef Name="ID_CODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CARGO_CARGO">
+          <End Role="CARGO" Type="Oporie.ModuloPrincipal.CARGO" Multiplicity="0..1" />
+          <End Role="CARGO1" Type="Oporie.ModuloPrincipal.CARGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CARGO">
+              <PropertyRef Name="ID_CARGO" />
+            </Principal>
+            <Dependent Role="CARGO1">
+              <PropertyRef Name="ID_CARGOPADRE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_COLEGIATURA_HORARIO">
+          <End Role="HORARIO" Type="Oporie.ModuloPrincipal.HORARIO" Multiplicity="1" />
+          <End Role="COLEGIATURA" Type="Oporie.ModuloPrincipal.COLEGIATURA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HORARIO">
+              <PropertyRef Name="ID_HORARIO" />
+            </Principal>
+            <Dependent Role="COLEGIATURA">
+              <PropertyRef Name="ID_HORARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MATRICULA_HORARIO">
+          <End Role="HORARIO" Type="Oporie.ModuloPrincipal.HORARIO" Multiplicity="1" />
+          <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.MATRICULA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HORARIO">
+              <PropertyRef Name="ID_HORARIO" />
+            </Principal>
+            <Dependent Role="MATRICULA">
+              <PropertyRef Name="ID_HORARIO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_COLEGIATURA_PERIODO">
+          <End Role="PERIODO" Type="Oporie.ModuloPrincipal.PERIODO" Multiplicity="1" />
+          <End Role="COLEGIATURA" Type="Oporie.ModuloPrincipal.COLEGIATURA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERIODO">
+              <PropertyRef Name="ID_PERIODO" />
+            </Principal>
+            <Dependent Role="COLEGIATURA">
+              <PropertyRef Name="ID_PERIODO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MATRICULA_PERIODO">
+          <End Role="PERIODO" Type="Oporie.ModuloPrincipal.PERIODO" Multiplicity="1" />
+          <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.MATRICULA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PERIODO">
+              <PropertyRef Name="ID_PERIODO" />
+            </Principal>
+            <Dependent Role="MATRICULA">
+              <PropertyRef Name="ID_PERIODO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REFERENCIA_TELEFONO">
+          <End Role="TELEFONO" Type="Oporie.ModuloPrincipal.TELEFONO" Multiplicity="1" />
+          <End Role="REFERENCIA" Type="Oporie.ModuloPrincipal.REFERENCIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TELEFONO">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Principal>
+            <Dependent Role="REFERENCIA">
+              <PropertyRef Name="ID_TELEFONO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REQUISITOS_MATRICULA_REQUISITO">
+          <End Role="REQUISITO" Type="Oporie.ModuloPrincipal.REQUISITO" Multiplicity="1" />
+          <End Role="REQUISITOS_MATRICULA" Type="Oporie.ModuloPrincipal.REQUISITOS_MATRICULA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="REQUISITO">
+              <PropertyRef Name="ID_REQUISITO" />
+            </Principal>
+            <Dependent Role="REQUISITOS_MATRICULA">
+              <PropertyRef Name="ID_REQUISITO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MATRICULA_INSCRIPCION">
+          <End Role="INSCRIPCION" Type="Oporie.ModuloPrincipal.INSCRIPCION" Multiplicity="1" />
+          <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.MATRICULA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="INSCRIPCION">
+              <PropertyRef Name="ID_INSCRIPCION" />
+            </Principal>
+            <Dependent Role="MATRICULA">
+              <PropertyRef Name="ID_INSCRIPCION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REQUISITOS_MATRICULA_MATRICULA">
+          <End Role="MATRICULA" Type="Oporie.ModuloPrincipal.MATRICULA" Multiplicity="1" />
+          <End Role="REQUISITOS_MATRICULA" Type="Oporie.ModuloPrincipal.REQUISITOS_MATRICULA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MATRICULA">
+              <PropertyRef Name="ID_MATRICULA" />
+            </Principal>
+            <Dependent Role="REQUISITOS_MATRICULA">
+              <PropertyRef Name="ID_MATRICULA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OporieModuloPrincipalStoreContainer" CdmEntityContainer="ModuloPrincipalContext">
+    <EntitySetMapping Name="ALUMNO">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.ALUMNO)">
+        <MappingFragment StoreEntitySet="ALUMNO">
+          <ScalarProperty Name="ID_ALUMNO" ColumnName="ID_ALUMNO" />
+          <ScalarProperty Name="ID_AREAGEOGRAFICA" ColumnName="ID_AREAGEOGRAFICA" />
+          <ScalarProperty Name="ID_TELEFONO" ColumnName="ID_TELEFONO" />
+          <ScalarProperty Name="ALU_ID_INGRESADOPOR" ColumnName="ALU_ID_INGRESADOPOR" />
+          <ScalarProperty Name="ALU_CEDULA" ColumnName="ALU_CEDULA" />
+          <ScalarProperty Name="ALU_FIRSTNAME" ColumnName="ALU_FIRSTNAME" />
+          <ScalarProperty Name="ALU_LASTNAME" ColumnName="ALU_LASTNAME" />
+          <ScalarProperty Name="ALU_GENERO" ColumnName="ALU_GENERO" />
+          <ScalarProperty Name="ALU_FECHANAC" ColumnName="ALU_FECHANAC" />
+          <ScalarProperty Name="ALU_FOTO" ColumnName="ALU_FOTO" />
+          <ScalarProperty Name="ALU_LUGARNAC" ColumnName="ALU_LUGARNAC" />
+          <ScalarProperty Name="ALU_DIRECCION" ColumnName="ALU_DIRECCION" />
+          <ScalarProperty Name="ALU_FECHAINGRESO" ColumnName="ALU_FECHAINGRESO" />
+          <ScalarProperty Name="ALU_ESTADOCIVIL" ColumnName="ALU_ESTADOCIVIL" />
+          <ScalarProperty Name="ALU_EMAIL" ColumnName="ALU_EMAIL" />
+          <ScalarProperty Name="ALU_ESTADO" ColumnName="ALU_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENTORNO_FAMILIAR">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.ENTORNO_FAMILIAR)">
+        <MappingFragment StoreEntitySet="ENTORNO_FAMILIAR">
+          <ScalarProperty Name="ID_ENTORNOFAMILIAR" ColumnName="ID_ENTORNOFAMILIAR" />
+          <ScalarProperty Name="ID_STATUSVIVIENDA" ColumnName="ID_STATUSVIVIENDA" />
+          <ScalarProperty Name="ID_TIPOVIVIENDA" ColumnName="ID_TIPOVIVIENDA" />
+          <ScalarProperty Name="ID_SECTOR" ColumnName="ID_SECTOR" />
+          <ScalarProperty Name="ID_REPRESENTANTE" ColumnName="ID_REPRESENTANTE" />
+          <ScalarProperty Name="EFA_DIRECCIONTRABAJO" ColumnName="EFA_DIRECCIONTRABAJO" />
+          <ScalarProperty Name="EFA_INSTRUCCION" ColumnName="EFA_INSTRUCCION" />
+          <ScalarProperty Name="EFA_PROFESION" ColumnName="EFA_PROFESION" />
+          <ScalarProperty Name="EFA_OCUPACION" ColumnName="EFA_OCUPACION" />
+          <ScalarProperty Name="EFA_OTRASACTIVIDADES" ColumnName="EFA_OTRASACTIVIDADES" />
+          <ScalarProperty Name="EFA_TIEMPOLIBRE" ColumnName="EFA_TIEMPOLIBRE" />
+          <ScalarProperty Name="EFA_NUMEROEMBARAZOS" ColumnName="EFA_NUMEROEMBARAZOS" />
+          <ScalarProperty Name="EFA_NUMEROPARTOS" ColumnName="EFA_NUMEROPARTOS" />
+          <ScalarProperty Name="EFA_OBSERVACIONES" ColumnName="EFA_OBSERVACIONES" />
+          <ScalarProperty Name="EFA_ESTADO" ColumnName="EFA_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONA">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.PERSONA)">
+        <MappingFragment StoreEntitySet="PERSONA">
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_AREAGEOGRAFICA" ColumnName="ID_AREAGEOGRAFICA" />
+          <ScalarProperty Name="ID_TELEFONO" ColumnName="ID_TELEFONO" />
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+          <ScalarProperty Name="PER_CEDULA" ColumnName="PER_CEDULA" />
+          <ScalarProperty Name="PER_FIRSTNAME" ColumnName="PER_FIRSTNAME" />
+          <ScalarProperty Name="PER_LASTNAME" ColumnName="PER_LASTNAME" />
+          <ScalarProperty Name="PER_GENERO" ColumnName="PER_GENERO" />
+          <ScalarProperty Name="PER_FECHANAC" ColumnName="PER_FECHANAC" />
+          <ScalarProperty Name="PER_FOTO" ColumnName="PER_FOTO" />
+          <ScalarProperty Name="PER_LUGARNAC" ColumnName="PER_LUGARNAC" />
+          <ScalarProperty Name="PER_DIRECCION" ColumnName="PER_DIRECCION" />
+          <ScalarProperty Name="PER_ESTADOCIVIL" ColumnName="PER_ESTADOCIVIL" />
+          <ScalarProperty Name="PER_EMAIL" ColumnName="PER_EMAIL" />
+          <ScalarProperty Name="PER_ESTADO" ColumnName="PER_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPRESENTANTE">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.REPRESENTANTE)">
+        <MappingFragment StoreEntitySet="REPRESENTANTE">
+          <ScalarProperty Name="ID_REPRESENTANTE" ColumnName="ID_REPRESENTANTE" />
+          <ScalarProperty Name="ID_PARENTESCO" ColumnName="ID_PARENTESCO" />
+          <ScalarProperty Name="ID_PERSONA" ColumnName="ID_PERSONA" />
+          <ScalarProperty Name="ID_ALUMNO" ColumnName="ID_ALUMNO" />
+          <ScalarProperty Name="REP_FECHAINGRESO" ColumnName="REP_FECHAINGRESO" />
+          <ScalarProperty Name="REP_ESTADO" ColumnName="REP_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REPRESENTANTE_LEGAL">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.REPRESENTANTE_LEGAL)">
+        <MappingFragment StoreEntitySet="REPRESENTANTE_LEGAL">
+          <ScalarProperty Name="ID_REPRESENTANTELEGAL" ColumnName="ID_REPRESENTANTELEGAL" />
+          <ScalarProperty Name="ID_MATRICULA" ColumnName="ID_MATRICULA" />
+          <ScalarProperty Name="ID_TELEFONO" ColumnName="ID_TELEFONO" />
+          <ScalarProperty Name="RLE_CEDULA" ColumnName="RLE_CEDULA" />
+          <ScalarProperty Name="RLE_FIRSTNAME" ColumnName="RLE_FIRSTNAME" />
+          <ScalarProperty Name="RLE_LASTNAME" ColumnName="RLE_LASTNAME" />
+          <ScalarProperty Name="RLE_DIRECCION" ColumnName="RLE_DIRECCION" />
+          <ScalarProperty Name="RLE_ESTADO" ColumnName="RLE_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AREA_GEOGRAFICA">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.AREA_GEOGRAFICA)">
+        <MappingFragment StoreEntitySet="AREA_GEOGRAFICA">
+          <ScalarProperty Name="ID_AREAGEOGRAFICA" ColumnName="ID_AREAGEOGRAFICA" />
+          <ScalarProperty Name="ID_AREAGEOPADRE" ColumnName="ID_AREAGEOPADRE" />
+          <ScalarProperty Name="ID_CODIGO" ColumnName="ID_CODIGO" />
+          <ScalarProperty Name="AG_DESCRIPCION" ColumnName="AG_DESCRIPCION" />
+          <ScalarProperty Name="AG_ESTADO" ColumnName="AG_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARGO">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.CARGO)">
+        <MappingFragment StoreEntitySet="CARGO">
+          <ScalarProperty Name="ID_CARGO" ColumnName="ID_CARGO" />
+          <ScalarProperty Name="ID_CARGOPADRE" ColumnName="ID_CARGOPADRE" />
+          <ScalarProperty Name="CAR_CODIGO" ColumnName="CAR_CODIGO" />
+          <ScalarProperty Name="CAR_DESCRIPCION" ColumnName="CAR_DESCRIPCION" />
+          <ScalarProperty Name="CAR_ESTADO" ColumnName="CAR_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CODIGOS">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.CODIGOS)">
+        <MappingFragment StoreEntitySet="CODIGOS">
+          <ScalarProperty Name="ID_CODIGO" ColumnName="ID_CODIGO" />
+          <ScalarProperty Name="COD_DESCRIPCION" ColumnName="COD_DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HORARIO">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.HORARIO)">
+        <MappingFragment StoreEntitySet="HORARIO">
+          <ScalarProperty Name="ID_HORARIO" ColumnName="ID_HORARIO" />
+          <ScalarProperty Name="HOR_DESCRIPCION" ColumnName="HOR_DESCRIPCION" />
+          <ScalarProperty Name="HOR_ESTADO" ColumnName="HOR_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PARENTESCO">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.PARENTESCO)">
+        <MappingFragment StoreEntitySet="PARENTESCO">
+          <ScalarProperty Name="ID_PARENTESCO" ColumnName="ID_PARENTESCO" />
+          <ScalarProperty Name="PAR_DESCRIPCION" ColumnName="PAR_DESCRIPCION" />
+          <ScalarProperty Name="PAR_ESTADO" ColumnName="PAR_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERIODO">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.PERIODO)">
+        <MappingFragment StoreEntitySet="PERIODO">
+          <ScalarProperty Name="ID_PERIODO" ColumnName="ID_PERIODO" />
+          <ScalarProperty Name="PER_FECHAINICIO" ColumnName="PER_FECHAINICIO" />
+          <ScalarProperty Name="PER_FECHAFIN" ColumnName="PER_FECHAFIN" />
+          <ScalarProperty Name="PER_ESTADO" ColumnName="PER_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REFERENCIA">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.REFERENCIA)">
+        <MappingFragment StoreEntitySet="REFERENCIA">
+          <ScalarProperty Name="ID_REFERENCIA" ColumnName="ID_REFERENCIA" />
+          <ScalarProperty Name="ID_TELEFONO" ColumnName="ID_TELEFONO" />
+          <ScalarProperty Name="REF_CEDULA" ColumnName="REF_CEDULA" />
+          <ScalarProperty Name="REF_FIRSTNAME" ColumnName="REF_FIRSTNAME" />
+          <ScalarProperty Name="REF_LASTNAME" ColumnName="REF_LASTNAME" />
+          <ScalarProperty Name="REF_DIRECCION" ColumnName="REF_DIRECCION" />
+          <ScalarProperty Name="REF_ESTADO" ColumnName="REF_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REQUISITO">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.REQUISITO)">
+        <MappingFragment StoreEntitySet="REQUISITO">
+          <ScalarProperty Name="ID_REQUISITO" ColumnName="ID_REQUISITO" />
+          <ScalarProperty Name="REQ_DESCRIPCION" ColumnName="REQ_DESCRIPCION" />
+          <ScalarProperty Name="REQ_ESTADO" ColumnName="REQ_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TELEFONO">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.TELEFONO)">
+        <MappingFragment StoreEntitySet="TELEFONO">
+          <ScalarProperty Name="ID_TELEFONO" ColumnName="ID_TELEFONO" />
+          <ScalarProperty Name="TEL_NUMERO" ColumnName="TEL_NUMERO" />
+          <ScalarProperty Name="TEL_ESTADO" ColumnName="TEL_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLEGIATURA">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.COLEGIATURA)">
+        <MappingFragment StoreEntitySet="COLEGIATURA">
+          <ScalarProperty Name="ID_COLEGIATURA" ColumnName="ID_COLEGIATURA" />
+          <ScalarProperty Name="ID_PERIODO" ColumnName="ID_PERIODO" />
+          <ScalarProperty Name="ID_HORARIO" ColumnName="ID_HORARIO" />
+          <ScalarProperty Name="COL_VALOR" ColumnName="COL_VALOR" />
+          <ScalarProperty Name="COL_DESCRIPCION" ColumnName="COL_DESCRIPCION" />
+          <ScalarProperty Name="COL_FECHAPAGO" ColumnName="COL_FECHAPAGO" />
+          <ScalarProperty Name="COL_ESTADO" ColumnName="COL_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INSCRIPCION">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.INSCRIPCION)">
+        <MappingFragment StoreEntitySet="INSCRIPCION">
+          <ScalarProperty Name="ID_INSCRIPCION" ColumnName="ID_INSCRIPCION" />
+          <ScalarProperty Name="ID_ALUMNO" ColumnName="ID_ALUMNO" />
+          <ScalarProperty Name="INS_FECHAINGRESO" ColumnName="INS_FECHAINGRESO" />
+          <ScalarProperty Name="INS_OBSERVACION" ColumnName="INS_OBSERVACION" />
+          <ScalarProperty Name="INS_ESTADO" ColumnName="INS_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MATRICULA">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.MATRICULA)">
+        <MappingFragment StoreEntitySet="MATRICULA">
+          <ScalarProperty Name="ID_MATRICULA" ColumnName="ID_MATRICULA" />
+          <ScalarProperty Name="ID_INSCRIPCION" ColumnName="ID_INSCRIPCION" />
+          <ScalarProperty Name="ID_PERIODO" ColumnName="ID_PERIODO" />
+          <ScalarProperty Name="ID_HORARIO" ColumnName="ID_HORARIO" />
+          <ScalarProperty Name="MAT_FECHAINGRESO" ColumnName="MAT_FECHAINGRESO" />
+          <ScalarProperty Name="MAT_ESTADO" ColumnName="MAT_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REQUISITOS_MATRICULA">
+      <EntityTypeMapping TypeName="IsTypeOf(Oporie.ModuloPrincipal.REQUISITOS_MATRICULA)">
+        <MappingFragment StoreEntitySet="REQUISITOS_MATRICULA">
+          <ScalarProperty Name="ID_REQUISITOMATRICULA" ColumnName="ID_REQUISITOMATRICULA" />
+          <ScalarProperty Name="ID_REQUISITO" ColumnName="ID_REQUISITO" />
+          <ScalarProperty Name="ID_MATRICULA" ColumnName="ID_MATRICULA" />
+          <ScalarProperty Name="RMA_ESTADO" ColumnName="RMA_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ModuloPrincipalDataModel">
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.ALUMNO" Width="1.5" PointX="3" PointY="9" Height="4.8648079427083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.ENTORNO_FAMILIAR" Width="1.5" PointX="10.5" PointY="9.375" Height="4.0956022135416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.PERSONA" Width="1.5" PointX="6" PointY="9.125" Height="4.480205078125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.REPRESENTANTE" Width="1.5" PointX="8.25" PointY="10" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.REPRESENTANTE_LEGAL" Width="1.5" PointX="9.75" PointY="14.5" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.AREA_GEOGRAFICA" Width="1.5" PointX="0.75" PointY="6" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.CARGO" Width="1.5" PointX="3.75" PointY="5.125" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.CODIGOS" Width="1.5" PointX="1.5" PointY="2.5" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.HORARIO" Width="1.5" PointX="5.25" PointY="18.75" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.PARENTESCO" Width="1.5" PointX="6" PointY="5.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.PERIODO" Width="1.5" PointX="5.25" PointY="21.5" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.REFERENCIA" Width="1.5" PointX="3" PointY="21" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.REQUISITO" Width="1.5" PointX="10.5" PointY="18.375" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.TELEFONO" Width="1.5" PointX="0.75" PointY="10.25" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.COLEGIATURA" Width="1.5" PointX="7.5" PointY="19.875" Height="2.749492187499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.INSCRIPCION" Width="1.5" PointX="5.25" PointY="15.125" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.MATRICULA" Width="1.5" PointX="7.5" PointY="14.75" Height="3.1340950520833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="Oporie.ModuloPrincipal.REQUISITOS_MATRICULA" Width="1.5" PointX="12.75" PointY="15.125" Height="2.172587890624996" IsExpanded="true" />
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_ALUMNO_AREA_GEOGRAFICA" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.2470914713541656" />
+          <ConnectorPoint PointX="3.34375" PointY="8.2470914713541656" />
+          <ConnectorPoint PointX="3.34375" PointY="9" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_ALUMNO_TELEFONO" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="11.432444661458334" />
+          <ConnectorPoint PointX="3" PointY="11.432444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_INSCRIPCION_ALUMNO" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="13.864807942708332" />
+          <ConnectorPoint PointX="3.75" PointY="16.307444661458334" />
+          <ConnectorPoint PointX="5.25" PointY="16.307444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_ALUMNO" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="13.766256510416666" />
+          <ConnectorPoint PointX="9" PointY="13.766256510416666" />
+          <ConnectorPoint PointX="9" PointY="12.941793619791667" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_ENTORNO_FAMILIAR_REPRESENTANTE" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="11.470896809895834" />
+          <ConnectorPoint PointX="10.5" PointY="11.470896809895834" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_PERSONA_CARGO" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="7.6821907552083317" />
+          <ConnectorPoint PointX="5.625" PointY="8.0571907552083317" />
+          <ConnectorPoint PointX="5.625" PointY="11.3651025390625" />
+          <ConnectorPoint PointX="6" PointY="11.3651025390625" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_PERSONA_TELEFONO" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="10.809970330729165" />
+          <ConnectorPoint PointX="2.75" PointY="10.809970330729165" />
+          <ConnectorPoint PointX="2.75" PointY="8.75" />
+          <ConnectorPoint PointX="3.2604166666666665" PointY="8.75" />
+          <ConnectorPoint PointX="3.4270833333333335" PointY="8.75" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="8.75" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="8.75" />
+          <ConnectorPoint PointX="6.75" PointY="8.75" />
+          <ConnectorPoint PointX="6.75" PointY="9.125" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PERSONA" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="11.470896809895834" />
+          <ConnectorPoint PointX="8.25" PointY="11.470896809895834" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_PARENTESCO" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="6.7689925130208337" />
+          <ConnectorPoint PointX="9" PointY="6.7689925130208337" />
+          <ConnectorPoint PointX="9" PointY="10" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_MATRICULA" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="16.095896809895834" />
+          <ConnectorPoint PointX="9.75" PointY="16.095896809895834" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REPRESENTANTE_LEGAL_TELEFONO" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="12.614889322916667" />
+          <ConnectorPoint PointX="1.5" PointY="14.59375" />
+          <ConnectorPoint PointX="1.8229191666666667" PointY="14.59375" />
+          <ConnectorPoint PointX="1.9895858333333332" PointY="14.59375" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="14.59375" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="14.59375" />
+          <ConnectorPoint PointX="9.75" PointY="14.59375" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_AREA_GEOGRAFICA" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.2819230769230767" PointY="8.7494921875" />
+          <ConnectorPoint PointX="1.2819230769230767" PointY="8.9994921875" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="8.9994921875" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="8.7494921875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_AREA_GEOGRAFICA_CODIGOS" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.875" PointY="4.2879850260416674" />
+          <ConnectorPoint PointX="1.875" PointY="6" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_CARGO_CARGO" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.2819230769230767" PointY="7.6821907552083317" />
+          <ConnectorPoint PointX="4.2819230769230767" PointY="7.9321907552083317" />
+          <ConnectorPoint PointX="4.7284615384615378" PointY="7.9321907552083317" />
+          <ConnectorPoint PointX="4.7284615384615378" PointY="7.6821907552083317" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_COLEGIATURA_HORARIO" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="20.302643229166666" />
+          <ConnectorPoint PointX="7.229166666666667" PointY="20.302643229166666" />
+          <ConnectorPoint PointX="7.395833333333333" PointY="20.302643229166666" />
+          <ConnectorPoint PointX="7.5" PointY="20.302643229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_MATRICULA_HORARIO" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="18.751152846153843" />
+          <ConnectorPoint PointX="7.125" PointY="18.376152846153843" />
+          <ConnectorPoint PointX="7.125" PointY="16.317047526041669" />
+          <ConnectorPoint PointX="7.5" PointY="16.317047526041669" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_COLEGIATURA_PERIODO" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="22.062246093749998" />
+          <ConnectorPoint PointX="7.5" PointY="22.062246093749998" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_MATRICULA_PERIODO" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="21.563460538461534" />
+          <ConnectorPoint PointX="7.3125" PointY="21.000960538461534" />
+          <ConnectorPoint PointX="7.3125" PointY="17.131823289062496" />
+          <ConnectorPoint PointX="7.5" PointY="17.131823289062496" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REFERENCIA_TELEFONO" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.9062525" PointY="12.614889322916667" />
+          <ConnectorPoint PointX="1.9062525" PointY="22.278595377604166" />
+          <ConnectorPoint PointX="3" PointY="22.278595377604166" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_REQUISITO" ManuallyRouted="false">
+          <ConnectorPoint PointX="12" PointY="19.268992513020834" />
+          <ConnectorPoint PointX="13.5" PointY="19.268992513020834" />
+          <ConnectorPoint PointX="13.5" PointY="17.297587890624996" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_MATRICULA_INSCRIPCION" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="15.658523763020835" />
+          <ConnectorPoint PointX="7.5" PointY="15.658523763020835" />
+        </AssociationConnector>
+        <AssociationConnector Association="Oporie.ModuloPrincipal.FK_REQUISITOS_MATRICULA_MATRICULA" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="17.694194335937503" />
+          <ConnectorPoint PointX="13.0937475" PointY="17.694194335937503" />
+          <ConnectorPoint PointX="13.0937475" PointY="17.297587890624996" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

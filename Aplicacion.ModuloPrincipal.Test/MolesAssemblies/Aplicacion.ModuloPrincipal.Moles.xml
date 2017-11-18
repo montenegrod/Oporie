@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Aplicacion.ModuloPrincipal.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos">
+            <summary>Mole type of <see cref="T:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos"/>
+            .</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.#ctor(Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.Bind(Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AgregarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.BuscarAlumnoPaginadoInt32Int32">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.BuscarAlumnoPorApellidoString">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.BuscarAlumnoPorCedulaString">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.BuscarAlumnoPorNombreString">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.ConstructorIDepositoDeAlumno">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.EliminarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.ModificarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="T:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances.AgregarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances.BuscarAlumnoPaginadoInt32Int32">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances.BuscarAlumnoPorApellidoString">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances.BuscarAlumnoPorCedulaString">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances.BuscarAlumnoPorNombreString">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances.EliminarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.MServicioDeGestionDeAlumnos.AllInstances.ModificarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="T:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos">
+            <summary>Stub type of <see cref="T:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos"/>
+            .</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.#ctor">
+            <summary>Initializes a new instance of type SIServicioDeGestionDeAlumnos</summary>
+        </member>
+        <member name="F:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.AgregarAlumnoALUMNO">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.amp::Aplicacion#ModuloPrincipal#GestionDeAlumnos#IServicioDeGestionDeAlumnos#AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.amp::Aplicacion#ModuloPrincipal#GestionDeAlumnos#IServicioDeGestionDeAlumnos#BuscarAlumnoPaginado(System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.amp::Aplicacion#ModuloPrincipal#GestionDeAlumnos#IServicioDeGestionDeAlumnos#BuscarAlumnoPorApellido(System.String)">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.amp::Aplicacion#ModuloPrincipal#GestionDeAlumnos#IServicioDeGestionDeAlumnos#BuscarAlumnoPorCedula(System.String)">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.amp::Aplicacion#ModuloPrincipal#GestionDeAlumnos#IServicioDeGestionDeAlumnos#BuscarAlumnoPorNombre(System.String)">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.amp::Aplicacion#ModuloPrincipal#GestionDeAlumnos#IServicioDeGestionDeAlumnos#EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.amp::Aplicacion#ModuloPrincipal#GestionDeAlumnos#IServicioDeGestionDeAlumnos#ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="F:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.BuscarAlumnoPaginadoInt32Int32">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.BuscarAlumnoPorApellidoString">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.BuscarAlumnoPorCedulaString">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.BuscarAlumnoPorNombreString">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.EliminarAlumnoALUMNO">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="F:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SIServicioDeGestionDeAlumnos.ModificarAlumnoALUMNO">
+            <summary>Sets the stub of <see cref="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.IServicioDeGestionDeAlumnos.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="T:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SServicioDeGestionDeAlumnos">
+            <summary>Stub type of <see cref="T:Aplicacion.ModuloPrincipal.GestionDeAlumnos.ServicioDeGestionDeAlumnos"/>
+            .</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SServicioDeGestionDeAlumnos.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SServicioDeGestionDeAlumnos.InitializeStub">
+            <summary>Initializes a new instance of type SServicioDeGestionDeAlumnos</summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SServicioDeGestionDeAlumnos.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Aplicacion.ModuloPrincipal.GestionDeAlumnos.Moles.SServicioDeGestionDeAlumnos.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>

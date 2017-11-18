@@ -1,0 +1,884 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dominio.Core.Entidades.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ChangeTrackerExtensions"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions.AcceptAllChangesIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerExtensions.AcceptAllChanges(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions.StartTrackingAllIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerExtensions.StartTrackingAll(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions.StopTrackingAllIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerExtensions.StopTrackingAll(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions._AcceptAllChangesb__4IObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerExtensions.&lt;AcceptAllChanges&gt;b__4(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions._StartTrackingAllb__0IObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerExtensions.&lt;StartTrackingAll&gt;b__0(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerExtensions._StopTrackingAllb__2IObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerExtensions.&lt;StopTrackingAll&gt;b__2(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ChangeTrackerIterator"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.#ctor(Capas.Dominio.Core.Entidades.ChangeTrackerIterator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.CreateTEntity``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0,Capas.Dominio.Core.Entidades.ChangeTrackerIterator})">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Create``1(``0)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.Dispose">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Dispose"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.ExecuteActionOfIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Execute(System.Action`1{Capas.Dominio.Core.Entidades.IObjectWithChangeTracker})"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.TraverseIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Traverse(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.VisitIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Visit(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator._Traverseb__0PropertyInfo">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.&lt;Traverse&gt;b__0(System.Reflection.PropertyInfo)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator._Traverseb__2PropertyInfo">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.&lt;Traverse&gt;b__2(System.Reflection.PropertyInfo)"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.AllInstances.Dispose">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Dispose"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.AllInstances.ExecuteActionOfIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Execute(System.Action`1{Capas.Dominio.Core.Entidades.IObjectWithChangeTracker})"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.AllInstances.TraverseIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Traverse(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MChangeTrackerIterator.AllInstances.VisitIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ChangeTrackerIterator.Visit(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MEqualityComparer">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.EqualityComparer"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MEqualityComparer.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MEqualityComparer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MEqualityComparer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MEqualityComparer.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MEqualityComparer.BinaryEqualsObjectObject">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.EqualityComparer.BinaryEquals(System.Object,System.Object)"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ExtendedPropertiesDictionary"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.#ctor(Capas.Dominio.Core.Entidades.ExtendedPropertiesDictionary)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Collections.IDictionary)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Runtime.Serialization.IDeserializationCallback)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ExtendedPropertiesDictionary.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MExtendedPropertiesDictionary.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectChangeTracker"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.#ctor(Capas.Dominio.Core.Entidades.ObjectChangeTracker)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AcceptChanges">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.AcceptChanges"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.ChangeTrackingEnabledGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ChangeTrackingEnabled"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.ChangeTrackingEnabledSetBoolean">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ChangeTrackingEnabled"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.ExtendedPropertiesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ExtendedProperties"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.ObjectStateChangingAddEventHandlerOfObjectStateChangingEventArgs">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.add_ObjectStateChanging(System.EventHandler`1{Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs})"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.ObjectStateChangingRemoveEventHandlerOfObjectStateChangingEventArgs">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.remove_ObjectStateChanging(System.EventHandler`1{Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs})"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.ObjectsAddedToCollectionPropertiesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ObjectsAddedToCollectionProperties"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.ObjectsRemovedFromCollectionPropertiesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ObjectsRemovedFromCollectionProperties"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.OnDeserializedMethodStreamingContext">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnDeserializedMethod(System.Runtime.Serialization.StreamingContext)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.OnDeserializingMethodStreamingContext">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnDeserializingMethod(System.Runtime.Serialization.StreamingContext)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.OnObjectStateChangingObjectState">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnObjectStateChanging(Capas.Dominio.Core.Entidades.ObjectState)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.OriginalValuesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OriginalValues"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.RecordAdditionToCollectionPropertiesStringObject">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.RecordAdditionToCollectionProperties(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.RecordOriginalValueStringObject">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.RecordOriginalValue(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.RecordRemovalFromCollectionPropertiesStringObject">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.RecordRemovalFromCollectionProperties(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.StateGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.State"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.StateSetObjectState">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.State"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.AcceptChanges">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.AcceptChanges"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.ChangeTrackingEnabledGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ChangeTrackingEnabled"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.ChangeTrackingEnabledSetBoolean">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ChangeTrackingEnabled"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.ExtendedPropertiesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ExtendedProperties"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.ObjectStateChangingAddEventHandlerOfObjectStateChangingEventArgs">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.add_ObjectStateChanging(System.EventHandler`1{Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs})"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.ObjectStateChangingRemoveEventHandlerOfObjectStateChangingEventArgs">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.remove_ObjectStateChanging(System.EventHandler`1{Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs})"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.ObjectsAddedToCollectionPropertiesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ObjectsAddedToCollectionProperties"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.ObjectsRemovedFromCollectionPropertiesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.ObjectsRemovedFromCollectionProperties"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.OnDeserializedMethodStreamingContext">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnDeserializedMethod(System.Runtime.Serialization.StreamingContext)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.OnDeserializingMethodStreamingContext">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnDeserializingMethod(System.Runtime.Serialization.StreamingContext)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.OnObjectStateChangingObjectState">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnObjectStateChanging(Capas.Dominio.Core.Entidades.ObjectState)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.OriginalValuesGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OriginalValues"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.RecordAdditionToCollectionPropertiesStringObject">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.RecordAdditionToCollectionProperties(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.RecordOriginalValueStringObject">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.RecordOriginalValue(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.RecordRemovalFromCollectionPropertiesStringObject">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.RecordRemovalFromCollectionProperties(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.StateGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.State"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectChangeTracker.AllInstances.StateSetObjectState">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectChangeTracker.State"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectList">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectList"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.#ctor(Capas.Dominio.Core.Entidades.ObjectList)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.Bind(System.Collections.Generic.ICollection{System.Object})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.Bind(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectList.Bind(System.Collections.Generic.IList{System.Object})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectList.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectList.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectList.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectList.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.#ctor(Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.NewStateGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs.NewState"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.NewStateSetObjectState">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs.NewState"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.AllInstances.NewStateGet">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs.NewState"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectStateChangingEventArgs.AllInstances.NewStateSetObjectState">
+            <summary>Sets the mole of <see cref="P:Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs.NewState"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.MarkAsAddedT``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0,``0})">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions.MarkAsAdded``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.MarkAsDeletedT``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0,``0})">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions.MarkAsDeleted``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.MarkAsModifiedT``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0,``0})">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions.MarkAsModified``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.MarkAsUnchangedT``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0,``0})">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions.MarkAsUnchanged``1(``0)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.AcceptChangesIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions.AcceptChanges(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.StartTrackingIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions.StartTracking(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectWithChangeTrackerExtensions.StopTrackingIObjectWithChangeTracker">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectWithChangeTrackerExtensions.StopTracking(Capas.Dominio.Core.Entidades.IObjectWithChangeTracker)"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectsAddedToCollectionProperties"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.#ctor(Capas.Dominio.Core.Entidades.ObjectsAddedToCollectionProperties)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Collections.IDictionary)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,Capas.Dominio.Core.Entidades.ObjectList}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Collections.Generic.IDictionary{System.String,Capas.Dominio.Core.Entidades.ObjectList})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Capas.Dominio.Core.Entidades.ObjectList}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Runtime.Serialization.IDeserializationCallback)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectsAddedToCollectionProperties.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectsAddedToCollectionProperties.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectsRemovedFromCollectionProperties"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.#ctor(Capas.Dominio.Core.Entidades.ObjectsRemovedFromCollectionProperties)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Collections.IDictionary)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,Capas.Dominio.Core.Entidades.ObjectList}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Collections.Generic.IDictionary{System.String,Capas.Dominio.Core.Entidades.ObjectList})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Capas.Dominio.Core.Entidades.ObjectList}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Runtime.Serialization.IDeserializationCallback)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.ObjectsRemovedFromCollectionProperties.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MObjectsRemovedFromCollectionProperties.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.OriginalValuesDictionary"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.#ctor(Capas.Dominio.Core.Entidades.OriginalValuesDictionary)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Collections.IDictionary)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Runtime.Serialization.IDeserializationCallback)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.OriginalValuesDictionary.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MOriginalValuesDictionary.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1">
+            <summary>Mole type of <see cref="T:Capas.Dominio.Core.Entidades.TrackableCollection`1"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.#ctor(Capas.Dominio.Core.Entidades.TrackableCollection{`0})">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.Collections.Generic.ICollection{`0})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Bind(System.Collections.Generic.IList{`0})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.ClearItems">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.ClearItems"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.Constructor">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.InsertItemInt32T">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.InsertItem(System.Int32,`1)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1._ClearItemsb__0T">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.&lt;ClearItems&gt;b__0(`1)"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.AllInstances.ClearItems">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.ClearItems"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.AllInstances.InsertItemInt32T">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.InsertItem(System.Int32,`1)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.MTrackableCollection`1.AllInstances._ClearItemsb__0T">
+            <summary>Sets the mole of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.&lt;ClearItems&gt;b__0(`1)"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SExtendedPropertiesDictionary">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.ExtendedPropertiesDictionary"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SExtendedPropertiesDictionary.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SExtendedPropertiesDictionary.InitializeStub">
+            <summary>Initializes a new instance of type SExtendedPropertiesDictionary</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SExtendedPropertiesDictionary.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SExtendedPropertiesDictionary.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SINotifyComplexPropertyChanging">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.INotifyComplexPropertyChanging"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SINotifyComplexPropertyChanging.#ctor">
+            <summary>Initializes a new instance of type SINotifyComplexPropertyChanging</summary>
+        </member>
+        <member name="F:Capas.Dominio.Core.Entidades.Moles.SINotifyComplexPropertyChanging.ComplexPropertyChangingEvent">
+            <summary>Event ComplexPropertyChanging</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SIObjectWithChangeTracker">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.IObjectWithChangeTracker"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SIObjectWithChangeTracker.#ctor">
+            <summary>Initializes a new instance of type SIObjectWithChangeTracker</summary>
+        </member>
+        <member name="F:Capas.Dominio.Core.Entidades.Moles.SIObjectWithChangeTracker.ChangeTrackerGet">
+            <summary>Sets the stub of <see cref="P:Capas.Dominio.Core.Entidades.IObjectWithChangeTracker.ChangeTracker"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SIObjectWithChangeTracker.dce::Capas#Dominio#Core#Entidades#IObjectWithChangeTracker#ChangeTracker">
+            <summary>Sets the stub of <see cref="P:Capas.Dominio.Core.Entidades.IObjectWithChangeTracker.ChangeTracker"/>
+            </summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SObjectChangeTracker">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectChangeTracker"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectChangeTracker.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectChangeTracker.InitializeStub">
+            <summary>Initializes a new instance of type SObjectChangeTracker</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectChangeTracker.OnObjectStateChanging(Capas.Dominio.Core.Entidades.ObjectState)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnObjectStateChanging(Capas.Dominio.Core.Entidades.ObjectState)"/>
+            </summary>
+        </member>
+        <member name="F:Capas.Dominio.Core.Entidades.Moles.SObjectChangeTracker.OnObjectStateChangingObjectState">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.Entidades.ObjectChangeTracker.OnObjectStateChanging(Capas.Dominio.Core.Entidades.ObjectState)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectChangeTracker.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectChangeTracker.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SObjectList">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectList"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectList.InitializeStub">
+            <summary>Initializes a new instance of type SObjectList</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SObjectStateChangingEventArgs">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectStateChangingEventArgs"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectStateChangingEventArgs.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectStateChangingEventArgs.InitializeStub">
+            <summary>Initializes a new instance of type SObjectStateChangingEventArgs</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectStateChangingEventArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectStateChangingEventArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SObjectsAddedToCollectionProperties">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectsAddedToCollectionProperties"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectsAddedToCollectionProperties.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectsAddedToCollectionProperties.InitializeStub">
+            <summary>Initializes a new instance of type SObjectsAddedToCollectionProperties</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectsAddedToCollectionProperties.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectsAddedToCollectionProperties.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SObjectsRemovedFromCollectionProperties">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.ObjectsRemovedFromCollectionProperties"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectsRemovedFromCollectionProperties.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SObjectsRemovedFromCollectionProperties.InitializeStub">
+            <summary>Initializes a new instance of type SObjectsRemovedFromCollectionProperties</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectsRemovedFromCollectionProperties.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SObjectsRemovedFromCollectionProperties.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.SOriginalValuesDictionary">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.OriginalValuesDictionary"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SOriginalValuesDictionary.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.SOriginalValuesDictionary.InitializeStub">
+            <summary>Initializes a new instance of type SOriginalValuesDictionary</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SOriginalValuesDictionary.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.SOriginalValuesDictionary.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1">
+            <summary>Stub type of <see cref="T:Capas.Dominio.Core.Entidades.TrackableCollection`1"/>
+            .</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.ClearItems">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.ClearItems"/>
+            </summary>
+        </member>
+        <member name="F:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.ClearItems01">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.ClearItems"/>
+            </summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.InitializeStub">
+            <summary>Initializes a new instance of type STrackableCollection</summary>
+        </member>
+        <member name="M:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.InsertItem(System.Int32,`0)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.InsertItem(System.Int32,`1)"/>
+            </summary>
+        </member>
+        <member name="F:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.InsertItemInt32T">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.Entidades.TrackableCollection`1.InsertItem(System.Int32,`1)"/>
+            </summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Capas.Dominio.Core.Entidades.Moles.STrackableCollection`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>

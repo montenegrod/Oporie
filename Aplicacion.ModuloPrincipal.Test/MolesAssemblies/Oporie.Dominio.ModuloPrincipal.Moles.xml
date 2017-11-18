@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Oporie.Dominio.ModuloPrincipal.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio">
+            <summary>Mole type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.Bind(Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AgregarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.BuscarAlumnoPaginadoInt32Int32">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.BuscarAlumnoPorApellidoString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.BuscarAlumnoPorCedulaString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.BuscarAlumnoPorNombreString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.ConstructorIDepositoDeAlumno">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.Dispose">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.Dispose"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.EliminarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.ModificarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.AgregarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.BuscarAlumnoPaginadoInt32Int32">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.BuscarAlumnoPorApellidoString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.BuscarAlumnoPorCedulaString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.BuscarAlumnoPorNombreString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.Dispose">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.Dispose"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.EliminarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MAlumnoServicio.AllInstances.ModificarAlumnoALUMNO">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido">
+            <summary>Mole type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.Bind(Capas.Dominio.Core.Specification.ISpecification{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.ConstructorString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.SatisfiedBy">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorApellido.AllInstances.SatisfiedBy">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula">
+            <summary>Mole type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.Bind(Capas.Dominio.Core.Specification.ISpecification{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.ConstructorString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.SatisfiedBy">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorCedula.AllInstances.SatisfiedBy">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre">
+            <summary>Mole type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.Bind(Capas.Dominio.Core.Specification.ISpecification{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.ConstructorString">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.SatisfiedBy">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.MEspecificacionPorNombre.AllInstances.SatisfiedBy">
+            <summary>Sets the mole of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SAlumnoServicio">
+            <summary>Stub type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.AlumnoServicio"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SAlumnoServicio.#ctor(Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SAlumnoServicio.InitializeStub">
+            <summary>Initializes a new instance of type SAlumnoServicio</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SAlumnoServicio.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SAlumnoServicio.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorApellido">
+            <summary>Stub type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorApellido.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorApellido.InitializeStub">
+            <summary>Initializes a new instance of type SEspecificacionPorApellido</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorApellido.SatisfiedBy">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorApellido.SatisfiedBy01">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorApellido.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorApellido.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorCedula">
+            <summary>Stub type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorCedula.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorCedula.InitializeStub">
+            <summary>Initializes a new instance of type SEspecificacionPorCedula</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorCedula.SatisfiedBy">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorCedula.SatisfiedBy01">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorCedula.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorCedula.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorNombre">
+            <summary>Stub type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorNombre.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorNombre.InitializeStub">
+            <summary>Initializes a new instance of type SEspecificacionPorNombre</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorNombre.SatisfiedBy">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorNombre.SatisfiedBy01">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre.SatisfiedBy"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorNombre.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SEspecificacionPorNombre.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio">
+            <summary>Stub type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.#ctor">
+            <summary>Initializes a new instance of type SIAlumnoServicio</summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.AgregarAlumnoALUMNO">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.BuscarAlumnoPaginadoInt32Int32">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.BuscarAlumnoPorApellidoString">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.BuscarAlumnoPorCedulaString">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.BuscarAlumnoPorNombreString">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.EliminarAlumnoALUMNO">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.ModificarAlumnoALUMNO">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IAlumnoServicio#AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.AgregarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IAlumnoServicio#BuscarAlumnoPaginado(System.Int32,System.Int32)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPaginado(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IAlumnoServicio#BuscarAlumnoPorApellido(System.String)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPorApellido(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IAlumnoServicio#BuscarAlumnoPorCedula(System.String)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPorCedula(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IAlumnoServicio#BuscarAlumnoPorNombre(System.String)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.BuscarAlumnoPorNombre(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IAlumnoServicio#EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.EliminarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIAlumnoServicio.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IAlumnoServicio#ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IAlumnoServicio.ModificarAlumno(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)"/>
+            </summary>
+        </member>
+        <member name="T:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno">
+            <summary>Stub type of <see cref="T:Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno"/>
+            .</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.#ctor">
+            <summary>Initializes a new instance of type SIDepositoDeAlumno</summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.AddALUMNO">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Add(`1)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.AttachALUMNO">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Attach(`1)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.BuscarAlumnoPorApellidoEspecificacionPorApellido">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno.BuscarAlumnoPorApellido(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.BuscarAlumnoPorCedulaEspecificacionPorCedula">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno.BuscarAlumnoPorCedula(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.BuscarAlumnoPorNombreEspecificacionPorNombre">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno.BuscarAlumnoPorNombre(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#Add(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Add(`1)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#Attach(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Attach(`1)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#GetAll">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetAll"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#GetBySpec(Capas.Dominio.Core.Specification.ISpecification{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO})">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetBySpec(Capas.Dominio.Core.Specification.ISpecification`1{`1})"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#GetFilteredElements(System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,System.Boolean}})">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetFilteredElements(System.Linq.Expressions.Expression`1{System.Func`2{`1,System.Boolean}})"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#GetFilteredElements``1(System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,System.Boolean}},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,``0}},System.Boolean)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetFilteredElements``1(System.Linq.Expressions.Expression`1{System.Func`2{`1,System.Boolean}},System.Int32,System.Int32,System.Linq.Expressions.Expression`1{System.Func`2{`1,``0}},System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#GetPagedElements``1(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,``0}},System.Boolean)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetPagedElements``1(System.Int32,System.Int32,System.Linq.Expressions.Expression`1{System.Func`2{`1,``0}},System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#GetPagedElements``1(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,``0}},Capas.Dominio.Core.Specification.ISpecification{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO},System.Boolean)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetPagedElements``1(System.Int32,System.Int32,System.Linq.Expressions.Expression`1{System.Func`2{`1,``0}},Capas.Dominio.Core.Specification.ISpecification`1{`1},System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#Modify(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Modify(`1)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#Remove(Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO)">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Remove(`1)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.GetAll">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetAll"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.GetBySpecISpecificationOfALUMNO">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetBySpec(Capas.Dominio.Core.Specification.ISpecification`1{`1})"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.GetFilteredElementsExpressionOfFuncOfALUMNOBoolean">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.GetFilteredElements(System.Linq.Expressions.Expression`1{System.Func`2{`1,System.Boolean}})"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.GetFilteredElementsExpressionOfFuncOfALUMNOBooleanInt32Int32ExpressionOfFuncOfALUMNOSBoolean``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,System.Boolean}},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,``0}},System.Boolean,System.Collections.Generic.IEnumerable{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO}})">
+            <summary>Sets stubs of GetFilteredElements(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter, Int32 pageIndex, Int32 pageCount, Expression`1&lt;Func`2&lt;!0,!!0&gt;&gt; orderByExpression, Boolean ascending)</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.GetPagedElementsInt32Int32ExpressionOfFuncOfALUMNOSBoolean``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,``0}},System.Boolean,System.Collections.Generic.IEnumerable{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO}})">
+            <summary>Sets stubs of GetPagedElements(Int32 pageIndex, Int32 pageCount, Expression`1&lt;Func`2&lt;!0,!!0&gt;&gt; orderByExpression, Boolean ascending)</summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.GetPagedElementsInt32Int32ExpressionOfFuncOfALUMNOSISpecificationOfALUMNOBoolean``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO,``0}},Capas.Dominio.Core.Specification.ISpecification{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO},System.Boolean,System.Collections.Generic.IEnumerable{Oporie.Dominio.ModuloPrincipal.Entidades.ALUMNO}})">
+            <summary>Sets stubs of GetPagedElements(Int32 pageIndex, Int32 pageCount, Expression`1&lt;Func`2&lt;!0,!!0&gt;&gt; orderByExpression, ISpecification`1&lt;!0&gt; specification, Boolean ascending)</summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.ModifyALUMNO">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Modify(`1)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IDepositoDeAlumno#BuscarAlumnoPorApellido(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno.BuscarAlumnoPorApellido(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorApellido)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IDepositoDeAlumno#BuscarAlumnoPorCedula(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno.BuscarAlumnoPorCedula(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorCedula)"/>
+            </summary>
+        </member>
+        <member name="M:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.odmp::Oporie#Dominio#ModuloPrincipal#Alumnos#IDepositoDeAlumno#BuscarAlumnoPorNombre(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre)">
+            <summary>Sets the stub of <see cref="M:Oporie.Dominio.ModuloPrincipal.Alumnos.IDepositoDeAlumno.BuscarAlumnoPorNombre(Oporie.Dominio.ModuloPrincipal.Alumnos.EspecificacionPorNombre)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.RemoveALUMNO">
+            <summary>Sets the stub of <see cref="M:Capas.Dominio.Core.IRepository`1.Remove(`1)"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.StoreContextGet">
+            <summary>Sets the stub of <see cref="P:Capas.Dominio.Core.IRepository`1.StoreContext"/>
+            </summary>
+        </member>
+        <member name="F:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.UnitOfWorkGet">
+            <summary>Sets the stub of <see cref="P:Capas.Dominio.Core.IRepository`1.UnitOfWork"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#StoreContext">
+            <summary>Sets the stub of <see cref="P:Capas.Dominio.Core.IRepository`1.StoreContext"/>
+            </summary>
+        </member>
+        <member name="P:Oporie.Dominio.ModuloPrincipal.Alumnos.Moles.SIDepositoDeAlumno.dc::Capas#Dominio#Core#IRepository{Oporie#Dominio#ModuloPrincipal#Entidades#ALUMNO}#UnitOfWork">
+            <summary>Sets the stub of <see cref="P:Capas.Dominio.Core.IRepository`1.UnitOfWork"/>
+            </summary>
+        </member>
+    </members>
+</doc>

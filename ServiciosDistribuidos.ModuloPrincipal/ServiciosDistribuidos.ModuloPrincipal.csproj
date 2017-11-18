@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D879C50E-7C48-4870-82C7-01C7FBF65291}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiciosDistribuidos.ModuloPrincipal</RootNamespace>
+    <AssemblyName>ServiciosDistribuidos.ModuloPrincipal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Packages\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceProviders\Container.cs" />
+    <Compile Include="InstanceProviders\UnityInstanceProvider.cs" />
+    <Compile Include="InstanceProviders\UnityInstanceProviderServiceBehavior.cs" />
+    <Compile Include="IServicioModuloPrincipal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioModuloPrincipal.asmx.cs">
+      <DependentUpon>ServicioModuloPrincipal.asmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="ServicioModuloPrincipal.asmx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aplicacion.ModuloPrincipal\Aplicacion.ModuloPrincipal.csproj">
+      <Project>{3C7231B2-9C77-4954-AE23-920834A4ECD4}</Project>
+      <Name>Aplicacion.ModuloPrincipal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Core.Entidades\Dominio.Core.Entidades.csproj">
+      <Project>{472E11B5-91A1-499D-8DDB-24BD8DD3BEEF}</Project>
+      <Name>Dominio.Core.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Core\Dominio.Core.csproj">
+      <Project>{614E34AC-DCF6-4AA7-9B9C-62DED9BCA542}</Project>
+      <Name>Dominio.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.CrossCutting.NetFramework\Infraestructura.CrossCutting.NetFramework.csproj">
+      <Project>{0707E911-0F15-4F1A-AE7A-340BA31F08A9}</Project>
+      <Name>Infraestructura.CrossCutting.NetFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.CrossCutting\Infraestructura.CrossCutting.csproj">
+      <Project>{D2A92834-652E-49B6-8FC9-CD1D73E627AB}</Project>
+      <Name>Infraestructura.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.Data.Core\Infraestructura.Data.Core.csproj">
+      <Project>{4870DEC4-964E-48F8-AAA4-6FA76B17F45D}</Project>
+      <Name>Infraestructura.Data.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Dominio.ModuloPrincipal.Entidades\Oporie.Dominio.ModuloPrincipal.Entidades.csproj">
+      <Project>{AE415D36-18BD-4172-AB22-5F75054208CF}</Project>
+      <Name>Oporie.Dominio.ModuloPrincipal.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Dominio.ModuloPrincipal\Oporie.Dominio.ModuloPrincipal.csproj">
+      <Project>{EDCD67F2-5CDB-4641-9842-BD8E65659B9B}</Project>
+      <Name>Oporie.Dominio.ModuloPrincipal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Infraestructura.Data.ModuloPrincipal\Oporie.Infraestructura.Data.ModuloPrincipal.csproj">
+      <Project>{254D0F45-76C1-4744-A443-917DFB605422}</Project>
+      <Name>Oporie.Infraestructura.Data.ModuloPrincipal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiciosDistribuidos.SeedWork\ServiciosDistribuidos.SeedWork.csproj">
+      <Project>{8C7E8674-1F7C-4736-80F9-27202ABC09C5}</Project>
+      <Name>ServiciosDistribuidos.SeedWork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1566</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C5A2A01-00F5-450D-94AB-9BCF2ACF9F00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aplicacion.ModuloPrincipal.Test</RootNamespace>
+    <AssemblyName>Aplicacion.ModuloPrincipal.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aplicacion.ModuloPrincipal.Moles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dominio.Core.Entidades.Moles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dominio.Core.Moles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Infraestructura.CrossCutting.Moles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Moles.Framework, Version=0.94.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Oporie.Dominio.ModuloPrincipal.Moles, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioDeGestionDeAlumnosTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aplicacion.ModuloPrincipal\Aplicacion.ModuloPrincipal.csproj">
+      <Project>{3C7231B2-9C77-4954-AE23-920834A4ECD4}</Project>
+      <Name>Aplicacion.ModuloPrincipal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Core.Entidades\Dominio.Core.Entidades.csproj">
+      <Project>{472E11B5-91A1-499D-8DDB-24BD8DD3BEEF}</Project>
+      <Name>Dominio.Core.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Core\Dominio.Core.csproj">
+      <Project>{614E34AC-DCF6-4AA7-9B9C-62DED9BCA542}</Project>
+      <Name>Dominio.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.CrossCutting.NetFramework\Infraestructura.CrossCutting.NetFramework.csproj">
+      <Project>{0707E911-0F15-4F1A-AE7A-340BA31F08A9}</Project>
+      <Name>Infraestructura.CrossCutting.NetFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.CrossCutting\Infraestructura.CrossCutting.csproj">
+      <Project>{D2A92834-652E-49B6-8FC9-CD1D73E627AB}</Project>
+      <Name>Infraestructura.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.Data.Core\Infraestructura.Data.Core.csproj">
+      <Project>{4870DEC4-964E-48F8-AAA4-6FA76B17F45D}</Project>
+      <Name>Infraestructura.Data.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Dominio.ModuloPrincipal.Entidades\Oporie.Dominio.ModuloPrincipal.Entidades.csproj">
+      <Project>{AE415D36-18BD-4172-AB22-5F75054208CF}</Project>
+      <Name>Oporie.Dominio.ModuloPrincipal.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Dominio.ModuloPrincipal\Oporie.Dominio.ModuloPrincipal.csproj">
+      <Project>{EDCD67F2-5CDB-4641-9842-BD8E65659B9B}</Project>
+      <Name>Oporie.Dominio.ModuloPrincipal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Infraestructura.Data.ModuloPrincipal\Oporie.Infraestructura.Data.ModuloPrincipal.csproj">
+      <Project>{254D0F45-76C1-4744-A443-917DFB605422}</Project>
+      <Name>Oporie.Infraestructura.Data.ModuloPrincipal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Moles Include="Dominio.Core.Entidades.moles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Moles Include="Infraestructura.CrossCutting.moles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Moles Include="Dominio.Core.moles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Moles Include="Oporie.Dominio.ModuloPrincipal.moles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Moles Include="Aplicacion.ModuloPrincipal.moles" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

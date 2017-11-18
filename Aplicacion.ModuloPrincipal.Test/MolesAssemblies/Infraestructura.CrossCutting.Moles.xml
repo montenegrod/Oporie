@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Infraestructura.CrossCutting.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:Infraestructura.Crosscutting.Validator.Moles.MEntityValidatorFactory">
+            <summary>Mole type of <see cref="T:Infraestructura.Crosscutting.Validator.EntityValidatorFactory"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.MEntityValidatorFactory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.MEntityValidatorFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.MEntityValidatorFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Infraestructura.Crosscutting.Validator.Moles.MEntityValidatorFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Infraestructura.Crosscutting.Validator.Moles.MEntityValidatorFactory.CreateValidator">
+            <summary>Sets the mole of <see cref="M:Infraestructura.Crosscutting.Validator.EntityValidatorFactory.CreateValidator"/>
+            </summary>
+        </member>
+        <member name="P:Infraestructura.Crosscutting.Validator.Moles.MEntityValidatorFactory.SetCurrentIEntityValidatorFactory">
+            <summary>Sets the mole of <see cref="M:Infraestructura.Crosscutting.Validator.EntityValidatorFactory.SetCurrent(Infraestructura.Crosscutting.Validator.IEntityValidatorFactory)"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.CrossCutting.Logging.Moles.MLoggerFactory">
+            <summary>Mole type of <see cref="T:Infraestructura.CrossCutting.Logging.LoggerFactory"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.MLoggerFactory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.MLoggerFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.MLoggerFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Infraestructura.CrossCutting.Logging.Moles.MLoggerFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Infraestructura.CrossCutting.Logging.Moles.MLoggerFactory.CreateLog">
+            <summary>Sets the mole of <see cref="M:Infraestructura.CrossCutting.Logging.LoggerFactory.CreateLog"/>
+            </summary>
+        </member>
+        <member name="P:Infraestructura.CrossCutting.Logging.Moles.MLoggerFactory.SetCurrentILoggerFactory">
+            <summary>Sets the mole of <see cref="M:Infraestructura.CrossCutting.Logging.LoggerFactory.SetCurrent(Infraestructura.CrossCutting.Logging.ILoggerFactory)"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.Crosscutting.Adapter.Moles.MTypeAdapterFactory">
+            <summary>Mole type of <see cref="T:Infraestructura.Crosscutting.Adapter.TypeAdapterFactory"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.MTypeAdapterFactory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.MTypeAdapterFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.MTypeAdapterFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Infraestructura.Crosscutting.Adapter.Moles.MTypeAdapterFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:Infraestructura.Crosscutting.Adapter.Moles.MTypeAdapterFactory.CreateAdapter">
+            <summary>Sets the mole of <see cref="M:Infraestructura.Crosscutting.Adapter.TypeAdapterFactory.CreateAdapter"/>
+            </summary>
+        </member>
+        <member name="P:Infraestructura.Crosscutting.Adapter.Moles.MTypeAdapterFactory.SetCurrentITypeAdapterFactory">
+            <summary>Sets the mole of <see cref="M:Infraestructura.Crosscutting.Adapter.TypeAdapterFactory.SetCurrent(Infraestructura.Crosscutting.Adapter.ITypeAdapterFactory)"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidator">
+            <summary>Stub type of <see cref="T:Infraestructura.Crosscutting.Validator.IEntityValidator"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidator.#ctor">
+            <summary>Initializes a new instance of type SIEntityValidator</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidator.GetInvalidMessagesTEntity``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0,System.Collections.Generic.IEnumerable{System.String}})">
+            <summary>Sets stubs of GetInvalidMessages(!!0 item)</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidator.icc::Infraestructura#Crosscutting#Validator#IEntityValidator#GetInvalidMessages``1(``0)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Validator.IEntityValidator.GetInvalidMessages``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidator.icc::Infraestructura#Crosscutting#Validator#IEntityValidator#IsValid``1(``0)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Validator.IEntityValidator.IsValid``1(``0)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidator.IsValidTEntity``1(Microsoft.Moles.Framework.MolesDelegates.Func{``0,System.Boolean})">
+            <summary>Sets stubs of IsValid(!!0 item)</summary>
+        </member>
+        <member name="T:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidatorFactory">
+            <summary>Stub type of <see cref="T:Infraestructura.Crosscutting.Validator.IEntityValidatorFactory"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidatorFactory.#ctor">
+            <summary>Initializes a new instance of type SIEntityValidatorFactory</summary>
+        </member>
+        <member name="F:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidatorFactory.Create">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Validator.IEntityValidatorFactory.Create"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Validator.Moles.SIEntityValidatorFactory.icc::Infraestructura#Crosscutting#Validator#IEntityValidatorFactory#Create">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Validator.IEntityValidatorFactory.Create"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.CrossCutting.Logging.Moles.SILogger">
+            <summary>Stub type of <see cref="T:Infraestructura.CrossCutting.Logging.ILogger"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.#ctor">
+            <summary>Initializes a new instance of type SILogger</summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.DebugObject">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Debug(System.Object)"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.DebugStringExceptionObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Debug(System.String,System.Exception,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.DebugStringObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Debug(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.FatalStringExceptionObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Fatal(System.String,System.Exception,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.FatalStringObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Fatal(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#Debug(System.Object)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Debug(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#Debug(System.String,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Debug(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#Debug(System.String,System.Exception,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Debug(System.String,System.Exception,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#Fatal(System.String,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Fatal(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#Fatal(System.String,System.Exception,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.Fatal(System.String,System.Exception,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#LogError(System.String,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogError(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#LogError(System.String,System.Exception,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogError(System.String,System.Exception,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#LogInfo(System.String,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogInfo(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILogger.icc::Infraestructura#CrossCutting#Logging#ILogger#LogWarning(System.String,System.Object[])">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogWarning(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.LogErrorStringExceptionObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogError(System.String,System.Exception,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.LogErrorStringObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogError(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.LogInfoStringObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogInfo(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILogger.LogWarningStringObjectArray">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILogger.LogWarning(System.String,System.Object[])"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.CrossCutting.Logging.Moles.SILoggerFactory">
+            <summary>Stub type of <see cref="T:Infraestructura.CrossCutting.Logging.ILoggerFactory"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILoggerFactory.#ctor">
+            <summary>Initializes a new instance of type SILoggerFactory</summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SILoggerFactory.Create">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILoggerFactory.Create"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SILoggerFactory.icc::Infraestructura#CrossCutting#Logging#ILoggerFactory#Create">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ILoggerFactory.Create"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.CrossCutting.Logging.Moles.SITraceManager">
+            <summary>Stub type of <see cref="T:Infraestructura.CrossCutting.Logging.ITraceManager"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.#ctor">
+            <summary>Initializes a new instance of type SITraceManager</summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceCritical(System.String)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceCritical(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceError(System.String)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceError(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceInfo(System.String)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceInfo(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceStart">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStart"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceStartLogicalOperation(System.String)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStartLogicalOperation(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceStop">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStop"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceStopLogicalOperation">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStopLogicalOperation"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.icc::Infraestructura#CrossCutting#Logging#ITraceManager#TraceWarning(System.String)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceWarning(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceCriticalString">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceCritical(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceErrorString">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceError(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceInfoString">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceInfo(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceStart">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStart"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceStartLogicalOperationString">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStartLogicalOperation(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceStop">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStop"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceStopLogicalOperation">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceStopLogicalOperation"/>
+            </summary>
+        </member>
+        <member name="F:Infraestructura.CrossCutting.Logging.Moles.SITraceManager.TraceWarningString">
+            <summary>Sets the stub of <see cref="M:Infraestructura.CrossCutting.Logging.ITraceManager.TraceWarning(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapter">
+            <summary>Stub type of <see cref="T:Infraestructura.Crosscutting.Adapter.ITypeAdapter"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapter.#ctor">
+            <summary>Initializes a new instance of type SITypeAdapter</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapter.AdaptObject``1(Microsoft.Moles.Framework.MolesDelegates.Func{System.Object,``0})">
+            <summary>Sets stubs of Adapt(Object source)</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapter.AdaptTSource``2(Microsoft.Moles.Framework.MolesDelegates.Func{``0,``1})">
+            <summary>Sets stubs of Adapt(!!0 source)</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapter.icc::Infraestructura#Crosscutting#Adapter#ITypeAdapter#Adapt``1(System.Object)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Adapter.ITypeAdapter.Adapt``1(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapter.icc::Infraestructura#Crosscutting#Adapter#ITypeAdapter#Adapt``2(``0)">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Adapter.ITypeAdapter.Adapt``2(``0)"/>
+            </summary>
+        </member>
+        <member name="T:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapterFactory">
+            <summary>Stub type of <see cref="T:Infraestructura.Crosscutting.Adapter.ITypeAdapterFactory"/>
+            .</summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapterFactory.#ctor">
+            <summary>Initializes a new instance of type SITypeAdapterFactory</summary>
+        </member>
+        <member name="F:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapterFactory.Create">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Adapter.ITypeAdapterFactory.Create"/>
+            </summary>
+        </member>
+        <member name="M:Infraestructura.Crosscutting.Adapter.Moles.SITypeAdapterFactory.icc::Infraestructura#Crosscutting#Adapter#ITypeAdapterFactory#Create">
+            <summary>Sets the stub of <see cref="M:Infraestructura.Crosscutting.Adapter.ITypeAdapterFactory.Create"/>
+            </summary>
+        </member>
+    </members>
+</doc>

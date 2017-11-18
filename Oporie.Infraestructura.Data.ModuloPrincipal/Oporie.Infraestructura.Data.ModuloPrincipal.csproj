@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{254D0F45-76C1-4744-A443-917DFB605422}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oporie.Infraestructura.Data.ModuloPrincipal</RootNamespace>
+    <AssemblyName>Oporie.Infraestructura.Data.ModuloPrincipal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IModuloPrincipalModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IModuloPrincipalModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloPrincipalDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuloPrincipalDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloPrincipalModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModuloPrincipalModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloPrincipalModel.Context.Extensions.cs">
+      <DependentUpon>ModuloPrincipalModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Depositos\DepositoDeAlumno.cs" />
+    <Compile Include="Recursos\Mensajes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mensajes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UnitOfWork\MainBCUnitOfWork.cs" />
+    <Compile Include="UnitOfWork\Mapping\ConfiguracionEntidadAlumno.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ModuloPrincipalDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModuloPrincipalDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="IModuloPrincipalModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IModuloPrincipalModel.cs</LastGenOutput>
+    </None>
+    <None Include="ModuloPrincipalModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModuloPrincipalModel.Context.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio.Core.Entidades\Dominio.Core.Entidades.csproj">
+      <Project>{472E11B5-91A1-499D-8DDB-24BD8DD3BEEF}</Project>
+      <Name>Dominio.Core.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio.Core\Dominio.Core.csproj">
+      <Project>{614E34AC-DCF6-4AA7-9B9C-62DED9BCA542}</Project>
+      <Name>Dominio.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.CrossCutting\Infraestructura.CrossCutting.csproj">
+      <Project>{D2A92834-652E-49B6-8FC9-CD1D73E627AB}</Project>
+      <Name>Infraestructura.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.Data.Core\Infraestructura.Data.Core.csproj">
+      <Project>{4870DEC4-964E-48F8-AAA4-6FA76B17F45D}</Project>
+      <Name>Infraestructura.Data.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Dominio.ModuloPrincipal.Entidades\Oporie.Dominio.ModuloPrincipal.Entidades.csproj">
+      <Project>{AE415D36-18BD-4172-AB22-5F75054208CF}</Project>
+      <Name>Oporie.Dominio.ModuloPrincipal.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oporie.Dominio.ModuloPrincipal\Oporie.Dominio.ModuloPrincipal.csproj">
+      <Project>{EDCD67F2-5CDB-4641-9842-BD8E65659B9B}</Project>
+      <Name>Oporie.Dominio.ModuloPrincipal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Recursos\Mensajes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mensajes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModuloPrincipalDataModel.edmx.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
