@@ -47,7 +47,7 @@ namespace Oporie.Infraestructura.Data.ModuloPrincipal.Depositos
             IModuloPrincipalModel activaContexto = this.StoreContext as IModuloPrincipalModel;
             if (activaContexto != null)
             {
-                //Ejecutar la operación en este depósito (ALUMNO)
+                //Ejecutar la operación en este depósito (ALUMNO *)
                 return activaContexto.ALUMNO
                                     .Include(c => c.ALU_FOTO)
                                     .Where(especificacion.SatisfiedBy())
